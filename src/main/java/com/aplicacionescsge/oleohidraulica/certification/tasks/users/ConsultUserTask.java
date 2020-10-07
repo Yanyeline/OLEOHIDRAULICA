@@ -23,15 +23,10 @@ public class ConsultUserTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(MenuOption.OPTION_USER),
+                Click.on(MenuOption.OPTION_USER));
+        actor.attemptsTo(
                 Enter.theValue(Search).into(UserPage.SEARCH_USER)
         );
-
-        try {
-            Thread.sleep(50000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     public static ConsultUserTask fillFields(String search) {

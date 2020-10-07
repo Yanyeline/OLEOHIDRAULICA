@@ -24,8 +24,10 @@ public class LoginTask implements Task {
 
         actor.attemptsTo(
 
-                Enter.theValue(Email).into(LoginPage.TXT_EMAIL),
-                Enter.theValue(Password).into(LoginPage.TXT_PASSWORD),
+                Enter.theValue(Email).into(LoginPage.TXT_EMAIL));
+        actor.attemptsTo(
+                Enter.theValue(Password).into(LoginPage.TXT_PASSWORD));
+        actor.attemptsTo(
                 Click.on(LoginPage.BTN_LOGIN)
 
 

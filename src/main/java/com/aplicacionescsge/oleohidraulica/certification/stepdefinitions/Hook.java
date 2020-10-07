@@ -13,8 +13,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.*;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class Hook {
-    @Steps
-    OpenTheAplicationTask openTheAplicationTask;
+
 
     @Before
     public static void before(){
@@ -22,7 +21,8 @@ public class Hook {
         theActor("default");
 
     }
-
+    @Steps
+    OpenTheAplicationTask openTheAplicationTask;
     @Given("^user is loged on page with email \"(.*)\" and Password \"(.*)\"$")
     public void user_is_loged_on_page_with_email_and_Password(String email, String password) {
         theActorInTheSpotlight().can(BrowseTheWeb.with(Driver.chromeDriver()));
