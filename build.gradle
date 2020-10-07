@@ -1,0 +1,63 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "net.serenity-bdd:serenity-gradle-plugin:1.9.4"
+
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+
+configurations {
+    unitTestCompile.extendsFrom testCompile
+    unitTestRuntime.extendsFrom testRuntime
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.0.88'
+    compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.0.88'
+    compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.48'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.0.88'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.0.88'
+    compile group: 'net.serenity-bdd', name: 'serenity-reports', version: '2.0.88'
+
+
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.7.1'
+
+    compile group: 'org.apache.poi', name: 'poi', version: '4.1.1'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.1'
+    compile group: 'net.serenity-bdd', name: 'serenity-ensure', version: '2.0.90'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.7'
+}
+
+
+
+test {
+    maxParallelForks = Runtime.runtime.availableProcessors()
+}
+
+gradle.startParameter.continueOnFailure = true
+
+
+tasks.withType(Test) {
+    systemProperties = System.properties
+}
+
+
+group 'com.aplicaciones-csge.oleohidraulica'
+version '1.0-SNAPSHOT'
+
