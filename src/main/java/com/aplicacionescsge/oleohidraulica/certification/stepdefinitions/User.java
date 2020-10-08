@@ -2,7 +2,6 @@ package com.aplicacionescsge.oleohidraulica.certification.stepdefinitions;
 
 
 import com.aplicacionescsge.oleohidraulica.certification.pages.UserPage;
-import com.aplicacionescsge.oleohidraulica.certification.questions.PageTitleQuestion;
 import com.aplicacionescsge.oleohidraulica.certification.questions.ResultSearchQuestion;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.users.ConsultUserTask;
 import cucumber.api.java.en.Then;
@@ -10,7 +9,7 @@ import cucumber.api.java.en.When;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-import static org.hamcrest.Matchers.equalTo;
+
 
 public class User {
 

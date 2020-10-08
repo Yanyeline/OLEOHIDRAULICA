@@ -18,6 +18,7 @@ public class ConfigureProfile {
     @When("^user changes profile name (.*)$")
     public void user_changes_profile_name(String nameProfile) {
         theActorInTheSpotlight().attemptsTo(ChangeProfileNameTask.fillFields(nameProfile));
+
     }
 
 

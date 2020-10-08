@@ -17,7 +17,6 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Steps;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-import static net.serenitybdd.screenplay.actors.OnStage.*;
 import static org.hamcrest.Matchers.equalTo;
 
 public class Login {
@@ -31,23 +30,23 @@ public class Login {
 
     @Given("^user is on the login page$")
     public void user_is_on_the_login_page() {
-        theActorInTheSpotlight().can(BrowseTheWeb.with(Driver.chromeDriver()));
-        theActorInTheSpotlight().wasAbleTo(openTheAplicationTask);
+        user.can(BrowseTheWeb.with(Driver.chromeDriver()));
+        user.wasAbleTo(openTheAplicationTask);
     }
 
     @When("^user enter email \"([^\"]*)\" and Password \"([^\"]*)\" and click the log In button$")
     public void user_enter_email_and_Password_and_click_the_log_In_button(String email, String password) {
-        theActorInTheSpotlight().attemptsTo(LoginTask.fillFields(email, password));
+        user.attemptsTo(LoginTask.fillFields(email, password));
     }
 
     @Then("^user go to the (.*) page$")
     public void user_go_to_the_page(String namePage) {
-        theActorInTheSpotlight().should(seeThat(PageTitleQuestion.is(), equalTo(namePage)));
+        user.should(seeThat(PageTitleQuestion.is(), equalTo(namePage)));
     }
 
     @Then("^user sees the message (.*)$")
     public void user_sees_the_message(String message) {
-        theActorInTheSpotlight().should(seeThat(MessageQuestion.is(LoginPage.MESSAGE_INVALID), equalTo(message)));
+        user.should(seeThat(MessageQuestion.is(LoginPage.MESSAGE_INVALID), equalTo(message)));
 
     }
 
