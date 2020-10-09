@@ -1,5 +1,5 @@
 Feature: Login
-@uno
+
   Scenario Outline: User can successfully login
 
     Given user is on the login page
