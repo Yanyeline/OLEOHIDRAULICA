@@ -5,11 +5,11 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.targets.Target;
 
-public class MessageQuestion implements Question<String> {
+public class Message implements Question<String> {
 
     public Target message;
 
-    public MessageQuestion(Target element) {
+    public Message(Target element) {
 
         message = element;
     }
@@ -20,9 +20,9 @@ public class MessageQuestion implements Question<String> {
         return Text.of(message).viewedBy(actor).asString().replace("\n×", "");
     }
 
-    public static MessageQuestion is(Target element) {
+    public static Message is(Target element) {
 
-        return new MessageQuestion(element);
+        return new Message(element);
     }
 
 

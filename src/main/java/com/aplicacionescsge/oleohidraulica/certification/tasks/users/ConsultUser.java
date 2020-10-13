@@ -10,11 +10,11 @@ import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class ConsultUserTask implements Task {
+public class ConsultUser implements Task {
 
     String Search;
 
-    public ConsultUserTask(String search) {
+    public ConsultUser(String search) {
 
         Search = search;
     }
@@ -29,7 +29,7 @@ public class ConsultUserTask implements Task {
         );
     }
 
-    public static ConsultUserTask fillFields(String search) {
-        return instrumented(ConsultUserTask.class, search);
+    public static ConsultUser fillFields(String search) {
+        return instrumented(ConsultUser.class, search);
     }
 }

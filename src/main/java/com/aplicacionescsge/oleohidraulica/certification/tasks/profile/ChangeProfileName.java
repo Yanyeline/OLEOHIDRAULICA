@@ -1,6 +1,5 @@
 package com.aplicacionescsge.oleohidraulica.certification.tasks.profile;
 
-import com.aplicacionescsge.oleohidraulica.certification.pages.LoginPage;
 import com.aplicacionescsge.oleohidraulica.certification.pages.MenuOption;
 import com.aplicacionescsge.oleohidraulica.certification.pages.ProfilePage;
 import net.serenitybdd.screenplay.Actor;
@@ -11,12 +10,12 @@ import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class ChangeProfileNameTask implements Task {
+public class ChangeProfileName implements Task {
 
     String NameProfile;
 
 
-    public ChangeProfileNameTask(String nameProfile) {
+    public ChangeProfileName(String nameProfile) {
         NameProfile = nameProfile;
     }
 
@@ -32,7 +31,7 @@ public class ChangeProfileNameTask implements Task {
         );
     }
 
-    public static ChangeProfileNameTask fillFields(String email) {
-        return instrumented(ChangeProfileNameTask.class, email);
+    public static ChangeProfileName fillFields(String email) {
+        return instrumented(ChangeProfileName.class, email);
     }
 }

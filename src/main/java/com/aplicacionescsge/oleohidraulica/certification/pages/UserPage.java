@@ -5,8 +5,18 @@ import org.openqa.selenium.By;
 
 public class UserPage {
 
-    public static Target TABLE_USER = Target.the("").locatedBy("//tbody//td[contains(text(),'')]//parent::tr");
+    public static Target TABLE_USER = Target.the("").locatedBy("//tbody//td[contains(text(),'{0}')]//parent::tr");
     public static Target SEARCH_USER = Target.the("").located(By.xpath("//div[@id='userTable_filter']//input[@type='search']"));
+
+    public static Target BTN_ADD_USER = Target.the("").located(By.xpath("//button[@class='btn-reg']"));
+
+    public static Target TXT_NAME = Target.the("").located(By.id("name"));
+    public static Target TXT_EMAIL = Target.the("").located(By.id("email"));
+    public static Target TXT_ID = Target.the("").located(By.id("identificacion"));
+    public static Target DDL_ROLE = Target.the("").located(By.name("rol"));
+    public static Target DDL_ROLE_OPTION = Target.the("").locatedBy("(//div[@class='form-group']//select[@name='rol']//option[contains(text(),'{0}')])[1]");
+
+    public static Target BTN_SAVE = Target.the("").located(By.xpath("//button[@class='btn-env ']//p[contains(text(),'Guardar')]"));
 
 
 }

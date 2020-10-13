@@ -9,11 +9,11 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
-public class WaitTask implements Task {
+public class Wait implements Task {
 
     Target Element;
 
-    public WaitTask(Target element){
+    public Wait(Target element){
         Element = element;
     }
 
@@ -24,7 +24,7 @@ public class WaitTask implements Task {
         );
     }
 
-    public static WaitTask Element(Target element){
-        return instrumented(WaitTask.class, element);
+    public static Wait Element(Target element){
+        return instrumented(Wait.class, element);
     }
 }

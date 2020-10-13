@@ -9,12 +9,12 @@ import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class RecoverPasswordTask implements Task {
+public class RecoverPassword implements Task {
 
     String Email;
 
 
-    public RecoverPasswordTask(String email) {
+    public RecoverPassword(String email) {
         Email = email;
     }
 
@@ -28,7 +28,7 @@ public class RecoverPasswordTask implements Task {
         );
     }
 
-    public static RecoverPasswordTask fillFields(String email) {
-        return instrumented(RecoverPasswordTask.class, email);
+    public static RecoverPassword fillFields(String email) {
+        return instrumented(RecoverPassword.class, email);
     }
 }

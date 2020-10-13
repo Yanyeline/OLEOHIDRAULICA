@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.*;
 import net.thucydides.core.annotations.Step;
 
-public class OpenTheAplicationTask implements Task {
+public class OpenTheAplication implements Task {
 
     LoginPage login;
 

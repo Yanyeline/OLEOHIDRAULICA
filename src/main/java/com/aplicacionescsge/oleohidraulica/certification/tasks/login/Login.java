@@ -9,11 +9,11 @@ import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class LoginTask implements Task {
+public class Login implements Task {
     String Email;
     String Password;
 
-    public LoginTask(String email, String password) {
+    public Login(String email, String password) {
         Email = email;
         Password = password;
     }
@@ -34,7 +34,7 @@ public class LoginTask implements Task {
         );
     }
 
-    public static LoginTask fillFields(String email, String password) {
-        return instrumented(LoginTask.class, email, password);
+    public static Login fillFields(String email, String password) {
+        return instrumented(Login.class, email, password);
     }
 }

@@ -1,8 +1,6 @@
 package com.aplicacionescsge.oleohidraulica.certification.tasks.login;
 
-import com.aplicacionescsge.oleohidraulica.certification.pages.HomePage;
 import com.aplicacionescsge.oleohidraulica.certification.pages.MenuOption;
-import com.aplicacionescsge.oleohidraulica.certification.tasks.common.WaitTask;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -10,7 +8,7 @@ import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class LogoutTask implements Task {
+public class Logout implements Task {
 
     @Step("{0} Logout site")
     @Override
@@ -21,7 +19,7 @@ public class LogoutTask implements Task {
         );
     }
 
-    public static LogoutTask asLogout() {
-        return instrumented(LogoutTask.class);
+    public static Logout asLogout() {
+        return instrumented(Logout.class);
     }
 }

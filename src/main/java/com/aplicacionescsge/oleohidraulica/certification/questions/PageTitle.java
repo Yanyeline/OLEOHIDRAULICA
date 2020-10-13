@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
 
-public class PageTitleQuestion implements Question<String> {
+public class PageTitle implements Question<String> {
 
 
     @Override
@@ -16,8 +16,8 @@ public class PageTitleQuestion implements Question<String> {
 
     }
 
-    public static PageTitleQuestion is() {
-        return new PageTitleQuestion();
+    public static PageTitle is() {
+        return new PageTitle();
     }
 
 

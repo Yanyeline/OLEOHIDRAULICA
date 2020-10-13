@@ -1,19 +1,17 @@
 package com.aplicacionescsge.oleohidraulica.certification.questions;
 
 
-import com.aplicacionescsge.oleohidraulica.certification.pages.UserPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.targets.Target;
 
 
-public class ResultSearchQuestion implements Question<Boolean> {
+public class ResultSearch implements Question<Boolean> {
 
         public Target Element;
         public String Search;
 
-    public ResultSearchQuestion(Target element, String search) {
+    public ResultSearch(Target element, String search) {
 
         Element = element;
         Search = search;
@@ -26,9 +24,9 @@ public class ResultSearchQuestion implements Question<Boolean> {
 
     }
 
-    public static ResultSearchQuestion isVisible(Target element, String search) {
+    public static ResultSearch isVisible(Target element, String search) {
 
-        return new ResultSearchQuestion(element, search);
+        return new ResultSearch(element, search);
     }
 
 
