@@ -72,13 +72,8 @@ public class User {
 
     @Then("^user sees updated employee information$")
     public void user_sees_updated_employee_information(List<Map<String, String>> data) {
-        //theActorInTheSpotlight().attemptsTo(ConsultUpdatedUser.selectItem()));
-        //  theActorInTheSpotlight().attemptsTo(ConsultDetailsUser.selectItem(data.get(0).get("name")));
+        
         theActorInTheSpotlight().should(seeThat(ResultSearchUpdatedUser.isVisible(data)));
-        //theActorInTheSpotlight().should(seeThat(Message.is(UserPage.TXT_NAME_UPDATE), equalTo(data.get(0).get("name"))));
-        //theActorInTheSpotlight().should(seeThat(Message.is(UserPage.TXT_EMAIL_UPDATE), equalTo(data.get(0).get("email"))));
-        //theActorInTheSpotlight().should(seeThat(Message.is(UserPage.TXT_ID_UPDATE), equalTo(data.get(0).get("id"))));
-        //theActorInTheSpotlight().should(seeThat(Message.is(UserPage.DDL_ROLE_UPDATE), equalTo(data.get(0).get("role"))));
 
     }
 
