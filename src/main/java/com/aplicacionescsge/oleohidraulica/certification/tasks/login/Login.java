@@ -18,7 +18,7 @@ public class Login implements Task {
         Password = password;
     }
 
-    @Step("{0} Login site")
+    @Step("{0} login site")
     @Override
     public <T extends Actor> void performAs(T actor) {
 

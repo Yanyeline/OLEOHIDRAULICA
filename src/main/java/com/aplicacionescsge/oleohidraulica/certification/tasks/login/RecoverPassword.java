@@ -18,7 +18,7 @@ public class RecoverPassword implements Task {
         Email = email;
     }
 
-    @Step("{0} Recover password")
+    @Step("{0} recover password")
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(

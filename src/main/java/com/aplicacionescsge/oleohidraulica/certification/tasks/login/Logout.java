@@ -10,7 +10,7 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class Logout implements Task {
 
-    @Step("{0} Logout site")
+    @Step("{0} logout site")
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(

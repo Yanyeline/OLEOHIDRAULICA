@@ -1,5 +1,6 @@
 package com.aplicacionescsge.oleohidraulica.certification.questions;
 
+import com.aplicacionescsge.oleohidraulica.certification.pages.UserPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;

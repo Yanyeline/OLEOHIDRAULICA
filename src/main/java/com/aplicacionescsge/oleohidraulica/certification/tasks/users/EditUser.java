@@ -8,27 +8,31 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.thucydides.core.annotations.Step;
 
+
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class ConsultUser implements Task {
-
+public class EditUser implements Task {
     String Search;
 
-    public ConsultUser(String search) {
+    public EditUser(String search) {
 
         Search = search;
     }
 
-    @Step("{0} consult user information")
+    @Step("{0} edit user")
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(MenuOption.OPTION_USER),
-                Enter.theValue(Search).into(UserPage.SEARCH_USER)
+                Enter.theValue(Search).into(UserPage.SEARCH_USER),
+                Click.on(UserPage.BTN_SORTING.of(Search)),
+                Click.on(UserPage.BTN_EDIT.of(Search))
         );
     }
 
-    public static ConsultUser fillFields(String search) {
-        return instrumented(ConsultUser.class, search);
+    public static EditUser fillFields(String search) {
+        return instrumented(EditUser.class, search);
     }
+
+
 }

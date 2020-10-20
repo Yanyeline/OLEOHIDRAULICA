@@ -18,7 +18,7 @@ public class Hook {
     @Before
     public static void before(){
         setTheStage(new OnlineCast());
-        theActor("default");
+        theActor("user");
 
     }
 
