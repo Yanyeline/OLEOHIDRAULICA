@@ -76,8 +76,7 @@ Feature: Manage user
       | email                   |
       | jsortiz29@misena.edu.co |
 
-
-  @uno
+    
   Scenario Outline: User can cancel update for an employee
     When user looks for employee Ortiz to update their information
     And user enters same data
