@@ -33,5 +33,5 @@ public class UserPage {
     // public static Target TABLE_USER_UPDATE = Target.the("").locatedBy("//tbody//tr[td//text()[contains(., '{0}}')] and td//text()[contains(., '{1}}')] and td//text()[contains(., '{2}}')]] ");
 
     public static Target BTN_VIEW = Target.the("").locatedBy("//tbody//parent::tr[td[contains(text(),'{0}')]]//parent::tbody//child::tr//td[@class='child']//button[@class='btn-view']");
-
+    public static Target BTN_USERSTATUS = Target.the("").located(By.xpath("//td[@class='sorting_1']"));
 }

@@ -45,3 +45,14 @@ Feature: Manage user
       | name    | email             | id         | role                       |
       | Socorro | soco48@prueba.com | 1847518001 | administrador de servicios |
 
+  Scenario Outline: User can modify user status
+      when the super user modifies the state of a user
+        | status   |
+        | <status> |
+      superuser can change users status from active to naive
+      Examples:
+        | status    |
+        | Inactivo  |
+
+
+
