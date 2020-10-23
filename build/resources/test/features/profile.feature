@@ -4,6 +4,6 @@ Feature: Configure profile
     Given user is loged on page with email "administrador@gmail.com" and Password "password"
 
   Scenario: User can change his profile name
-    When user changes profile name Prueba
+    When user changes profile name Super usuario
     Then the system should show the message Ha cambiado su nombre correctamente.
 

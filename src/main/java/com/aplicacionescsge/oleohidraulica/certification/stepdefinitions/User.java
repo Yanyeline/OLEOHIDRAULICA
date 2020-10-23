@@ -3,11 +3,11 @@ package com.aplicacionescsge.oleohidraulica.certification.stepdefinitions;
 
 import com.aplicacionescsge.oleohidraulica.certification.pages.LoginPage;
 import com.aplicacionescsge.oleohidraulica.certification.pages.UserPage;
-import com.aplicacionescsge.oleohidraulica.certification.questions.Message;
-import com.aplicacionescsge.oleohidraulica.certification.questions.PageTitle;
-import com.aplicacionescsge.oleohidraulica.certification.questions.ResultSearch;
-import com.aplicacionescsge.oleohidraulica.certification.questions.ResultSearchUpdatedUser;
+import com.aplicacionescsge.oleohidraulica.certification.questions.*;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.users.*;
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -72,8 +72,49 @@ public class User {
 
     @Then("^user sees updated employee information$")
     public void user_sees_updated_employee_information(List<Map<String, String>> data) {
-        
         theActorInTheSpotlight().should(seeThat(ResultSearchUpdatedUser.isVisible(data)));
+    }
+
+
+    @When("^user searches a employee by email \"([^\"]*)\"$")
+    public void userSearchesAEmployeeByEmail(String Search){
+        theActorInTheSpotlight().attemptsTo(ConsultUser.fillFields(Search));
+    }
+
+    @When("^user select a employee \"([^\"]*)\"$")
+    public void userSelectAEmployee(String Search)  {
+        theActorInTheSpotlight().attemptsTo(ConsultDetailsUser.fillFields(Search));
+    }
+
+    @Then("^user sees employee information$")
+    public void userSeesEmployeeInformation(List<Map<String, String>> data) {
+        theActorInTheSpotlight().should(seeThat(ResultSearchUpdatedUser.isVisible(data)));
+    }
+
+    @When("^user select a employee disable \"([^\"]*)\"$")
+    public void userSelectAEmployeeDisable(String Search)  {
+        theActorInTheSpotlight().attemptsTo(EnableUser.fillFields(Search));
+    }
+
+
+    @Then("^user sees the (.*) page$")
+    public void userSeesThePage(String namePage) {
+        theActorInTheSpotlight().should(seeThat(PageTitle.is(), equalTo(namePage)));
+    }
+
+    @Then("^user sees the state Activo of a employee \"([^\"]*)\"$")
+    public void userSeesTheStateActivoOfAEmployee(String email) {
+        theActorInTheSpotlight().should(seeThat(ResultSearch.isVisible(UserPage.BTN_STATE_ENABLE, email)));
+    }
+
+    @Then("^user sees same information's employee$")
+    public void userSeesSameInformationSEmployee(List<Map<String, String>> data) {
+        theActorInTheSpotlight().should(seeThat(ResultSearchUpdatedUser.isVisible(data)));
+    }
+
+    @When("^user enters same data$")
+    public void userEntersSameData(List<Map<String, String>> data) {
+        theActorInTheSpotlight().attemptsTo(CancelUserUpdate.fillFields(data));
 
     }
 

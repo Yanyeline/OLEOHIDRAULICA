@@ -1,11 +1,12 @@
 package com.aplicacionescsge.oleohidraulica.certification.tasks.users;
 
-import com.aplicacionescsge.oleohidraulica.certification.driver.Driver;
 import com.aplicacionescsge.oleohidraulica.certification.pages.UserPage;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.common.Wait;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.actions.*;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Scroll;
 import net.thucydides.core.annotations.Step;
 
 import java.util.List;
@@ -13,12 +14,12 @@ import java.util.Map;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class UpdateUser implements Task {
+public class CancelUserUpdate  implements Task {
 
 
     private List<Map<String, String>> datos;
 
-    public UpdateUser(List<Map<String, String>> datos) {
+    public CancelUserUpdate (List<Map<String, String>> datos) {
         this.datos = datos;
     }
 
@@ -35,14 +36,14 @@ public class UpdateUser implements Task {
                     Click.on(UserPage.DDL_ROLE_UPDATE),
                     Click.on(UserPage.DDL_ROLE_OPTION_UPDATE.of(registryData.get("role"))),
                     Scroll.to(UserPage.BTN_UPDATE),
-                    Click.on(UserPage.BTN_UPDATE)
+                    Click.on(UserPage.BTN_CLOSE_UPDATE),
+                    Click.on(UserPage.BTN_VIEW.of(registryData.get("name")))
             );
-
         }
     }
 
-    public static UpdateUser fillFields(List<Map<String, String>> datos) {
-        return instrumented(UpdateUser.class, datos);
+    public static CancelUserUpdate  fillFields(List<Map<String, String>> datos) {
+        return instrumented(CancelUserUpdate.class, datos);
     }
-
 }
+

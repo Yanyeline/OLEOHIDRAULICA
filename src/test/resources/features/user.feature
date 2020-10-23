@@ -32,7 +32,7 @@ Feature: Manage user
 
 
   Scenario Outline: User can modify register employee
-    When user looks for employee Socorrito to update their information
+    When user looks for employee Socorro to update their information
     And user enters new data
       | name   | email   | id   | role   |
       | <name> | <email> | <id> | <role> |
@@ -43,5 +43,49 @@ Feature: Manage user
       | <name> | <email> | <id> | <role> |
     Examples:
       | name    | email             | id         | role                       |
-      | Socorro | soco48@prueba.com | 1847518001 | administrador de servicios |
+      | Socorrito | socor48@prueba.com | 1547518001 | administrador de servicios |
 
+
+  Scenario Outline: User can consult the details of a employee
+    When user searches a employee by email "<email>"
+    And user select a employee "<email>"
+    Then user sees employee information
+      | name   | email   | id   | role   |
+      | <name> | <email> | <id> | <role> |
+    Examples:
+      | name  | email                    | id         | role          |
+      | Ortiz |  jsortiz29@misena.edu.co | 12345678   | super usuario |
+
+
+  Scenario Outline: User can enable an employee
+    When user searches a employee by email "<email>"
+    And user select a employee disable "<email>"
+    And User closes session
+    And user enter email "<email>" and Password "<password>" and click the log In button
+    Then user sees the Inicio | COC S.A.S page
+    Examples:
+      | email                   | password  |
+      | jsortiz29@misena.edu.co | 12345678  |
+
+
+  Scenario Outline: User can enable an employee
+    When user searches a employee by email "<email>"
+    And user select a employee disable "<email>"
+    Then user sees the state Activo of a employee "<email>"
+    Examples:
+      | email                   |
+      | jsortiz29@misena.edu.co |
+
+
+  @uno
+  Scenario Outline: User can cancel update for an employee
+    When user looks for employee Ortiz to update their information
+    And user enters same data
+      | name   | email   | id   | role   |
+      | Ortiz | cancelar@misena.edu.co | 1346367 | técnico |
+    Then user sees same information's employee
+      | name   | email   | id   | role   |
+      | <name> | <email> | <id> | <role> |
+    Examples:
+      | name  | email                   | id       | role          |
+      | Ortiz | jsortiz29@misena.edu.co | 12345678 | super usuario |
