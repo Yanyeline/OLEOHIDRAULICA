@@ -1,6 +1,5 @@
 package com.aplicacionescsge.oleohidraulica.certification.questions;
 
-
 import com.aplicacionescsge.oleohidraulica.certification.pages.UserPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
@@ -21,7 +20,6 @@ public class ResultSearchUpdatedUser implements Question<Boolean> {
 
 
     public ResultSearchUpdatedUser(List<Map<String, String>> dates) {
-
         Dates = dates;
     }
 

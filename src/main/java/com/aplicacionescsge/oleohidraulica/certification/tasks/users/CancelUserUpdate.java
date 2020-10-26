@@ -35,7 +35,7 @@ public class CancelUserUpdate  implements Task {
                     Enter.theValue(registryData.get("id")).into(UserPage.TXT_ID_UPDATE),
                     Click.on(UserPage.DDL_ROLE_UPDATE),
                     Click.on(UserPage.DDL_ROLE_OPTION_UPDATE.of(registryData.get("role"))),
-                    Scroll.to(UserPage.BTN_UPDATE),
+                    Scroll.to(UserPage.BTN_CLOSE_UPDATE),
                     Click.on(UserPage.BTN_CLOSE_UPDATE),
                     Click.on(UserPage.BTN_VIEW.of(registryData.get("name")))
             );

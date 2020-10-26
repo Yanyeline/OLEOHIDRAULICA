@@ -20,15 +20,10 @@ public class EnableUser implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-
                 Click.on(UserPage.BTN_SORTING.of(Search)),
                 Click.on(UserPage.BTN_STATE_DISABLE.of(Search)
                 ));
     }
-
-    //public static ConsultDetailsUser selectItem(String search) {
-    //       return instrumented(ConsultDetailsUser.class, search);
-    //  }
 
     public static EnableUser fillFields(String search) {
         return instrumented(EnableUser.class, search);

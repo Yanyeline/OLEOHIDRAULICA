@@ -68,6 +68,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -82,6 +83,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="User" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -133,6 +136,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="442" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603750244777">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="442" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1603750244777" />
     <state x="488" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1603305085776">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -145,21 +152,29 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1603310443724" />
-    <state width="1323" height="236" key="GridCell.Tab.0.bottom" timestamp="1603407252125">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1603753320954">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="236" key="GridCell.Tab.0.center" timestamp="1603407252125">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1603753320954" />
+    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1603753320954">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="236" key="GridCell.Tab.0.left" timestamp="1603407252125">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1603753320954" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1603753320954">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="236" key="GridCell.Tab.0.right" timestamp="1603407252125">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1603753320954" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1603753320954">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1603753320954" />
+    <state x="184" y="29" key="SettingsEditor" timestamp="1603725339708">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1603725339708" />
   </component>
 </project>

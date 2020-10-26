@@ -46,7 +46,6 @@ public class User {
     public void user_registers_employee(String name) {
         theActorInTheSpotlight().attemptsTo(ConsultUser.fillFields(name));
         theActorInTheSpotlight().should(seeThat(ResultSearch.isVisible(UserPage.TABLE_USER, name)));
-
     }
 
     @When("^user cancels employee registration$")
@@ -75,35 +74,18 @@ public class User {
         theActorInTheSpotlight().should(seeThat(ResultSearchUpdatedUser.isVisible(data)));
     }
 
-
-    @When("^user searches a employee by email \"([^\"]*)\"$")
-    public void userSearchesAEmployeeByEmail(String Search){
-        theActorInTheSpotlight().attemptsTo(ConsultUser.fillFields(Search));
-    }
-
-    @When("^user select a employee \"([^\"]*)\"$")
-    public void userSelectAEmployee(String Search)  {
-        theActorInTheSpotlight().attemptsTo(ConsultDetailsUser.fillFields(Search));
-    }
-
     @Then("^user sees employee information$")
     public void userSeesEmployeeInformation(List<Map<String, String>> data) {
         theActorInTheSpotlight().should(seeThat(ResultSearchUpdatedUser.isVisible(data)));
     }
 
-    @When("^user select a employee disable \"([^\"]*)\"$")
-    public void userSelectAEmployeeDisable(String Search)  {
+    @When("^user select a employee disable (.*)$")
+    public void userSelectAEmployeeDisable(String Search) {
         theActorInTheSpotlight().attemptsTo(EnableUser.fillFields(Search));
     }
 
-
-    @Then("^user sees the (.*) page$")
-    public void userSeesThePage(String namePage) {
-        theActorInTheSpotlight().should(seeThat(PageTitle.is(), equalTo(namePage)));
-    }
-
-    @Then("^user sees the state Activo of a employee \"([^\"]*)\"$")
-    public void userSeesTheStateActivoOfAEmployee(String email) {
+    @Then("^user sees state enable in employee (.*)$")
+    public void userSeesStateEnableInEmployee(String email) {
         theActorInTheSpotlight().should(seeThat(ResultSearch.isVisible(UserPage.BTN_STATE_ENABLE, email)));
     }
 
@@ -117,5 +99,6 @@ public class User {
         theActorInTheSpotlight().attemptsTo(CancelUserUpdate.fillFields(data));
 
     }
+
 
 }
