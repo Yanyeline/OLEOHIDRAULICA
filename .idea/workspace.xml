@@ -67,8 +67,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,7 +86,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.Customer">
+    <configuration name="Customer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.aplicacionescsge.oleohidraulica.runners.Customer&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="User" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Customer" />
         <item itemvalue="Gradle.User" />
       </list>
     </recent_temporary>
@@ -152,26 +172,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1603310443724" />
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1603753320954">
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1603832755448">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1603753320954" />
-    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1603753320954">
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1603832755448" />
+    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1603832755447">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1603753320954" />
-    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1603753320954">
+    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1603832755447" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1603832755436">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1603753320954" />
-    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1603753320954">
+    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1603832755436" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1603832755447">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1603753320954" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1603832755447" />
     <state x="184" y="29" key="SettingsEditor" timestamp="1603725339708">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

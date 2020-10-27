@@ -67,7 +67,7 @@ Feature: Manage user
       | email                   | password  |
       | jsortiz29@misena.edu.co | 12345678  |
 
-@uno
+
   Scenario: User can enable an employee
     When user searches for the employee jsortiz29@misena.edu.co
     And user select a employee disable jsortiz29@misena.edu.co

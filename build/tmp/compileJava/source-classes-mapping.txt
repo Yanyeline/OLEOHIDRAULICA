@@ -1,0 +1,74 @@
+com/aplicacionescsge/oleohidraulica/certification/stepdefinitions/Hook.java
+ com.aplicacionescsge.oleohidraulica.certification.stepdefinitions.Hook
+com/aplicacionescsge/oleohidraulica/certification/pages/LoginPage.java
+ com.aplicacionescsge.oleohidraulica.certification.pages.LoginPage
+com/aplicacionescsge/oleohidraulica/certification/pages/HomePage.java
+ com.aplicacionescsge.oleohidraulica.certification.pages.HomePage
+com/aplicacionescsge/oleohidraulica/certification/tasks/common/Scroll.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.common.Scroll
+com/aplicacionescsge/oleohidraulica/certification/tasks/login/Logout.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.login.Logout
+com/aplicacionescsge/oleohidraulica/certification/driver/Driver.java
+ com.aplicacionescsge.oleohidraulica.certification.driver.Driver
+com/aplicacionescsge/oleohidraulica/certification/pages/ProfilePage.java
+ com.aplicacionescsge.oleohidraulica.certification.pages.ProfilePage
+com/aplicacionescsge/oleohidraulica/certification/tasks/users/ConsultUser.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.users.ConsultUser
+com/aplicacionescsge/oleohidraulica/certification/tasks/common/OpenTheAplication.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.common.OpenTheAplication
+com/aplicacionescsge/oleohidraulica/certification/tasks/customer/AddCustomer.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.customer.AddCustomer
+com/aplicacionescsge/oleohidraulica/certification/tasks/common/GoToMenuOption.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.common.GoToMenuOption
+com/aplicacionescsge/oleohidraulica/certification/tasks/users/AddUser.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.users.AddUser
+com/aplicacionescsge/oleohidraulica/certification/tasks/users/CancelUserUpdate.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.users.CancelUserUpdate
+com/aplicacionescsge/oleohidraulica/certification/tasks/users/UpdateUser.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.users.UpdateUser
+com/aplicacionescsge/oleohidraulica/certification/stepdefinitions/ConfigureProfile.java
+ com.aplicacionescsge.oleohidraulica.certification.stepdefinitions.ConfigureProfile
+com/aplicacionescsge/oleohidraulica/certification/questions/ResultSearchUpdatedUser.java
+ com.aplicacionescsge.oleohidraulica.certification.questions.ResultSearchUpdatedUser
+com/aplicacionescsge/oleohidraulica/certification/pages/MenuOption.java
+ com.aplicacionescsge.oleohidraulica.certification.pages.MenuOption
+com/aplicacionescsge/oleohidraulica/certification/tasks/login/RecoverPassword.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.login.RecoverPassword
+com/aplicacionescsge/oleohidraulica/certification/stepdefinitions/Login.java
+ com.aplicacionescsge.oleohidraulica.certification.stepdefinitions.Login
+com/aplicacionescsge/oleohidraulica/certification/tasks/customer/EnterRegistrationDataC.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.customer.EnterRegistrationDataC
+com/aplicacionescsge/oleohidraulica/certification/pages/UserPage.java
+ com.aplicacionescsge.oleohidraulica.certification.pages.UserPage
+com/aplicacionescsge/oleohidraulica/certification/questions/ResultSearch.java
+ com.aplicacionescsge.oleohidraulica.certification.questions.ResultSearch
+com/aplicacionescsge/oleohidraulica/certification/tasks/users/EnableUser.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.users.EnableUser
+com/aplicacionescsge/oleohidraulica/certification/constants/Constants.java
+ com.aplicacionescsge.oleohidraulica.certification.constants.Constants
+com/aplicacionescsge/oleohidraulica/certification/questions/PageTitle.java
+ com.aplicacionescsge.oleohidraulica.certification.questions.PageTitle
+com/aplicacionescsge/oleohidraulica/certification/tasks/users/EditUser.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.users.EditUser
+com/aplicacionescsge/oleohidraulica/certification/tasks/profile/ChangeProfileName.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.profile.ChangeProfileName
+com/aplicacionescsge/oleohidraulica/certification/pages/CustomerPage.java
+ com.aplicacionescsge.oleohidraulica.certification.pages.CustomerPage
+com/aplicacionescsge/oleohidraulica/certification/questions/Message.java
+ com.aplicacionescsge.oleohidraulica.certification.questions.Message
+com/aplicacionescsge/oleohidraulica/certification/tasks/users/CancelUserRegistration.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.users.CancelUserRegistration
+com/aplicacionescsge/oleohidraulica/certification/tasks/login/Login.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.login.Login
+com/aplicacionescsge/oleohidraulica/certification/tasks/users/ConsultDetailsUser.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.users.ConsultDetailsUser
+com/aplicacionescsge/oleohidraulica/certification/tasks/common/Wait.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.common.Wait
+com/aplicacionescsge/oleohidraulica/certification/tasks/users/EnterRegistrationData.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.users.EnterRegistrationData
+com/aplicacionescsge/oleohidraulica/certification/stepdefinitions/User.java
+ com.aplicacionescsge.oleohidraulica.certification.stepdefinitions.User
+com/aplicacionescsge/oleohidraulica/certification/stepdefinitions/Customer.java
+ com.aplicacionescsge.oleohidraulica.certification.stepdefinitions.Customer
+com/aplicacionescsge/oleohidraulica/certification/tasks/customer/ConsultCustomer.java
+ com.aplicacionescsge.oleohidraulica.certification.tasks.customer.ConsultCustomer
