@@ -27,7 +27,6 @@ public class EnterRegistrationDataC implements Task {
     public <T extends Actor> void performAs(T actor) {
         for (Map<String, String> registryData : datos) {
             actor.attemptsTo(
-                    Click.on(MenuOption.OPTION_CUSTOMER),
                     Wait.Element(CustomerPage.BTN_ADD_CUSTOMER),
                     Click.on(CustomerPage.BTN_ADD_CUSTOMER),
                     Enter.theValue(registryData.get("name")).into(CustomerPage.TXT_NAME),

@@ -11,5 +11,15 @@ Feature: Manage customer
       Then user sees register on customer table <nit>
       Examples:
         | name   | email               | nit         | address     | tel     | contact   | emailcontact    | cel       |
-        | TigUne | servicio@tigune.com | 888881117-2 | Cll 8 - 79A | 4478123 |  Tim      |Yanye@gmail.com  | 3016786789|
+        | TigUne | servicio@tigune.com | 888881117-2 | Cll 8 - 79A | 4478123 |  Tim      | Yanye@gmail.com | 3016786789|
 
+      @uno
+    Scenario Outline: User can consult customer details
+      When user search an customer <name>
+      And user select an customer <name>
+      Then user sees customer information
+        | name   | email   | nit   | address   | tel   | contact   | emailcontact   | cel  |
+        | <name> | <email> | <nit> | <address> | <tel> | <contact> | <emailcontact> | <cel>|
+      Examples:
+        | name   | email   | nit   | address   | tel   | contact   | emailcontact   | cel  |
+        | CONCRETOS ARGOS S.A | mantenimientozno@argos.com.co | 860350697-4 | CALLE 72 #  64C - 55 Medellín | 3456778 | ING. ALEJANDRO TABORDA | mgiraldoe@argos.com.co |3006786789|
