@@ -11,5 +11,6 @@ public class MenuOption {
 
     public static Target OPTION_USER = Target.the("").located(By.xpath("//span[contains(text(),'Usuarios')]"));
     public static Target OPTION_SHEDULE = Target.the("").located(By.xpath("//span[contains(text(),'Cronograma')]"));
+    public static Target OPTION_CUSTOMER = Target.the("").located(By.xpath("//span[contains(text(),'Clientes')]"));
 
 }

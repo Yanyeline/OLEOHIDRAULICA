@@ -7,7 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features/customer.feature",
-        glue = {"com.aplicacionescsge.oleohidraulica.certification.stepdefinitions"}
+        tags = "@uno",
+        glue = {"com.aplicacionescsge.oleohidraulica.stepdefinitions"}
 )
 
 public class Customer {

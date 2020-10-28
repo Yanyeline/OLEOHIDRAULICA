@@ -13,6 +13,7 @@ Feature: Manage customer
         | name   | email               | nit         | address     | tel     | contact   | emailcontact    | cel       |
         | Telme | servicio@tmx.com | 88822117-2 | Cll 8 - 78A | 4488123 |  Cris      | Dnch@gmail.com | 3066786789|
 
+      @uno
     Scenario Outline: User can consult customer details
       When user search an customer <name>
       And user select an customer <name>

@@ -1,4 +1,4 @@
-package com.aplicacionescsge.oleohidraulica.certification.stepdefinitions;
+package com.aplicacionescsge.oleohidraulica.stepdefinitions;
 
 import com.aplicacionescsge.oleohidraulica.certification.pages.CustomerPage;
 import com.aplicacionescsge.oleohidraulica.certification.questions.ResultSearch;
@@ -33,12 +33,10 @@ public class Customer {
         theActorInTheSpotlight().attemptsTo(EnterRegistrationDataC.fillFields(data));
     }
 
-
     @When("^user save data$")
     public void user_save_data() {
         theActorInTheSpotlight().attemptsTo(AddCustomer.selectItem());
     }
-
 
     //Consul a customer on table
     @Then("^user sees register on customer table (.*)$")
@@ -46,9 +44,6 @@ public class Customer {
         theActorInTheSpotlight().attemptsTo(ConsultCustomer.fillFields(nit));
         theActorInTheSpotlight().should(seeThat(ResultSearch.isVisible(CustomerPage.TABLE_CUSTOMER, nit)));
     }
-
-
-
 
     @Then("^user sees customer information$")
     public void userSeesCustomerInformation(List<Map<String, String>> data) {
