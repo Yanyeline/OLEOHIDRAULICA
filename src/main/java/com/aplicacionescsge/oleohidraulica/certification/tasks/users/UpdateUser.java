@@ -1,6 +1,5 @@
 package com.aplicacionescsge.oleohidraulica.certification.tasks.users;
 
-import com.aplicacionescsge.oleohidraulica.certification.driver.Driver;
 import com.aplicacionescsge.oleohidraulica.certification.pages.UserPage;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.common.Wait;
 import net.serenitybdd.screenplay.Actor;

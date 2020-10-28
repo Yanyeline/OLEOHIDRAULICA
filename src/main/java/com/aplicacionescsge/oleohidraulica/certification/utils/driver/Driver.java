@@ -1,9 +1,8 @@
-package com.aplicacionescsge.oleohidraulica.certification.driver;
+package com.aplicacionescsge.oleohidraulica.certification.utils.driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.actions.DriverTask;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 

@@ -1,4 +1,4 @@
-package com.aplicacionescsge.oleohidraulica.certification.stepdefinitions;
+package com.aplicacionescsge.oleohidraulica.stepdefinitions;
 
 import com.aplicacionescsge.oleohidraulica.certification.pages.ProfilePage;
 import com.aplicacionescsge.oleohidraulica.certification.questions.Message;

@@ -1,6 +1,6 @@
 package com.aplicacionescsge.oleohidraulica.certification.pages;
 
-import com.aplicacionescsge.oleohidraulica.certification.constants.Constants;
+import com.aplicacionescsge.oleohidraulica.certification.utils.constants.Constants;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.DefaultUrl;

@@ -6,9 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/profile.feature",
+        features = "src/test/resources/features/schedule.feature",
+        tags = "@uno",
         glue = {"com.aplicacionescsge.oleohidraulica.stepdefinitions"}
 )
 
-public class Profile {
+public class Schedule {
 }

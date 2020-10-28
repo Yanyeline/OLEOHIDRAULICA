@@ -1,6 +1,6 @@
 package com.aplicacionescsge.oleohidraulica.certification.tasks.common;
 
-import com.aplicacionescsge.oleohidraulica.certification.constants.*;
+import com.aplicacionescsge.oleohidraulica.certification.utils.constants.*;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.targets.Target;
