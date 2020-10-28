@@ -24,7 +24,7 @@ public class EditUser implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(MenuOption.OPTION_USER),
-                Enter.theValue(Search).into(UserPage.SEARCH_USER),
+                Enter.theValue(Search).into(UserPage.TXT_SEARCH_USER),
                 Click.on(UserPage.BTN_SORTING.of(Search)),
                 Click.on(UserPage.BTN_EDIT.of(Search))
         );

@@ -8,7 +8,7 @@ Feature: Manage user
     When user searches for the employee Marcos
     Then user sees employee information Marcos
 
-  @uno
+
   Scenario Outline: User can register employee successfull
     When user enters registration data
       | name   | email   | id   | role   |
@@ -16,8 +16,8 @@ Feature: Manage user
     And user saves registration data
     Then user registers employee <name>
     Examples:
-      | name            | email                | id         | role                       |
-      | Emamanuel Bueno | emmanuelb@prueba.com | 1075590081 | administrador de servicios |
+      | name         | email              | id         | role                       |
+      | Miguel Bueno | miguelb@prueba.com | 1005590081 | administrador de servicios |
 
 
   Scenario Outline: User can cancel register employee
@@ -30,7 +30,7 @@ Feature: Manage user
       | name   | email               | id         | role                    |
       | Andres | andres12@prueba.com | 1855518081 | administrador de flotas |
 
-
+@uno
   Scenario Outline: User can modify register employee
     When user looks for employee Socorrito to update their information
     And user enters new data

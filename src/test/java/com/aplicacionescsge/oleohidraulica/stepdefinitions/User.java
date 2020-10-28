@@ -1,4 +1,4 @@
-package com.aplicacionescsge.oleohidraulica.certification.stepdefinitions;
+package com.aplicacionescsge.oleohidraulica.stepdefinitions;
 
 
 import com.aplicacionescsge.oleohidraulica.certification.pages.LoginPage;
@@ -39,6 +39,7 @@ public class User {
 
     @When("^user saves registration data$")
     public void user_saves_registration_data() {
+
         theActorInTheSpotlight().attemptsTo(AddUser.selectItem());
     }
 
@@ -72,7 +73,7 @@ public class User {
 
     @Then("^user sees updated employee information$")
     public void user_sees_updated_employee_information(List<Map<String, String>> data) {
-        
+
         theActorInTheSpotlight().should(seeThat(ResultSearchUpdatedUser.isVisible(data)));
 
     }

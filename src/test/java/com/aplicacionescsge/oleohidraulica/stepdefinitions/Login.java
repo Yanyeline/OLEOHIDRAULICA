@@ -1,17 +1,18 @@
-package com.aplicacionescsge.oleohidraulica.certification.stepdefinitions;
+package com.aplicacionescsge.oleohidraulica.stepdefinitions;
 
-import com.aplicacionescsge.oleohidraulica.certification.driver.Driver;
+import com.aplicacionescsge.oleohidraulica.certification.utils.driver.Driver;
 import com.aplicacionescsge.oleohidraulica.certification.pages.LoginPage;
 import com.aplicacionescsge.oleohidraulica.certification.questions.*;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.common.*;
 
+import com.aplicacionescsge.oleohidraulica.certification.tasks.login.LoginUser;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.login.Logout;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.login.RecoverPassword;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.screenplay.Actor;
+
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Steps;
 
@@ -20,8 +21,6 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.Matchers.equalTo;
 
 public class Login {
-
-
 
     @Steps
     OpenTheAplication openTheAplication;
@@ -35,13 +34,14 @@ public class Login {
 
     @When("^user enter email \"([^\"]*)\" and Password \"([^\"]*)\" and click the log In button$")
     public void user_enter_email_and_Password_and_click_the_log_In_button(String email, String password) {
-        theActorInTheSpotlight().attemptsTo(com.aplicacionescsge.oleohidraulica.certification.tasks.login.Login.fillFields(email, password));
+        theActorInTheSpotlight().attemptsTo(LoginUser.fillFields(email, password));
     }
 
     @Then("^user go to the (.*) page$")
     public void user_go_to_the_page(String namePage) {
         theActorInTheSpotlight().should(seeThat(PageTitle.is(), equalTo(namePage)));
     }
+
 
     @Then("^user sees the message (.*)$")
     public void user_sees_the_message(String message) {

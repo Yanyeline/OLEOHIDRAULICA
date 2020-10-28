@@ -34,7 +34,8 @@ public class ResultSearchUpdatedUser implements Question<Boolean> {
         role = UserPage.DDL_ROLE_UPDATE.resolveFor(actor).getSelectedVisibleTextValue();
 
         for (Map<String, String> dataUser : Dates) {
-            if ((name.equals(dataUser.get("name"))) && (email.equals(dataUser.get("email"))) && (id.equals(dataUser.get("id"))) && (role.equals(dataUser.get("role")))) {
+            if ((name.equals(dataUser.get("name"))) && (email.equals(dataUser.get("email"))) &&
+                    (id.equals(dataUser.get("id"))) && (role.equals(dataUser.get("role")))) {
                 result = true;
             } else {
                 result = false;

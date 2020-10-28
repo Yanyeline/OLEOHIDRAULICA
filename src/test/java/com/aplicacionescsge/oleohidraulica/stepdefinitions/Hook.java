@@ -1,8 +1,8 @@
-package com.aplicacionescsge.oleohidraulica.certification.stepdefinitions;
+package com.aplicacionescsge.oleohidraulica.stepdefinitions;
 
-import com.aplicacionescsge.oleohidraulica.certification.driver.Driver;
+import com.aplicacionescsge.oleohidraulica.certification.utils.driver.Driver;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.common.OpenTheAplication;
-import com.aplicacionescsge.oleohidraulica.certification.tasks.login.Login;
+import com.aplicacionescsge.oleohidraulica.certification.tasks.login.LoginUser;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
@@ -29,6 +29,6 @@ public class Hook {
     public void user_is_loged_on_page_with_email_and_Password(String email, String password) {
         theActorInTheSpotlight().can(BrowseTheWeb.with(Driver.chromeDriver()));
         theActorInTheSpotlight().wasAbleTo(openTheAplication);
-        theActorInTheSpotlight().attemptsTo(Login.fillFields(email, password));
+        theActorInTheSpotlight().attemptsTo(LoginUser.fillFields(email, password));
     }
 }
