@@ -35,7 +35,6 @@ public class UpdateUser implements Task {
                     Click.on(UserPage.DDL_ROLE_OPTION_UPDATE.of(registryData.get("role"))),
                     Scroll.to(UserPage.BTN_UPDATE),
                     Click.on(UserPage.BTN_UPDATE)
-
             );
 
         }

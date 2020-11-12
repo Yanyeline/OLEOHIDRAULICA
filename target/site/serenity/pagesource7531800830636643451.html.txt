@@ -1,0 +1,486 @@
+<html lang="es" class="fa-events-icons-ready js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+    <meta charset="utf-8">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="4iBuIoyO0CfOKMzKqKqH40GGIjO6wbiFbcIA3gRs">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta content="Admin Dashboard" name="description">
+    <meta content="Themesbrand" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- favicons -->
+
+
+    <title>
+          Usuarios
+          | COC S.A.S
+        
+
+    </title>
+
+
+    <!-- App Icons -->
+    <!-- <link rel="shortcut icon" href="http://oleohidraulica.aplicaciones-csge.com/assets/images/favicon.ico"> -->
+
+    <link rel="shortcut icon" href="http://oleohidraulica.aplicaciones-csge.com/favicons/logo.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://oleohidraulica.aplicaciones-csge.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://oleohidraulica.aplicaciones-csge.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://oleohidraulica.aplicaciones-csge.com/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://oleohidraulica.aplicaciones-csge.com/favicons/android-chrome-192.png">
+
+
+
+      <!-- DataTables -->
+  <link href="http://oleohidraulica.aplicaciones-csge.com/assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+  <link href="http://oleohidraulica.aplicaciones-csge.com/assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+  <!-- Responsive datatable examples -->
+  <link href="http://oleohidraulica.aplicaciones-csge.com/assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+  <link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/administracion.css" rel="stylesheet" type="text/css">
+  <link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/modalStyle.css" rel="stylesheet" type="text/css">
+  <link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/navStyle.css" rel="stylesheet" type="text/css">
+
+
+
+
+    <!-- Basic Css files -->
+    <link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="http://oleohidraulica.aplicaciones-csge.com/assets/plugins/toastr/build/toast.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&amp;display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/523b97355a.js"></script><link href="https://use.fontawesome.com/523b97355a.css" media="all" rel="stylesheet">
+
+
+</head>
+
+<body class="fixed-left modal-open" style="overflow: visible; padding-right: 17px;">
+
+    <!-- Loader -->
+    <div id="preloader" style="display: none;">
+        <div id="status" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div id="wrapper">
+
+
+        <!-- Start right Content here -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+
+                <!-- Top Bar Start -->
+                <div class="topbar">
+
+                    <nav class="navbar-custom">
+                        <!-- Search input -->
+                                                <div class="search-wrap" id="search-wrap">
+                            <div class="search-bar">
+                                <input class="search-input" type="search" placeholder="Search">
+                                <a href="#" class="close-search toggle-search" data-target="#search-wrap">
+                                    <i class="mdi mdi-close-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                        <ul class="list-inline float-right mb-0">
+                                                        <!-- Search -->
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link waves-effect toggle-search" href="#" data-target="#search-wrap">
+                                    <i class="mdi mdi-magnify noti-icon"></i>
+                                </a>
+                            </li>
+                            <!-- Fullscreen -->
+                            <li class="list-inline-item dropdown notification-list hidden-xs-down">
+                                <a class="nav-link waves-effect" href="#" id="btn-fullscreen">
+                                    <i class="mdi mdi-fullscreen noti-icon"></i>
+                                </a>
+                            </li>
+                            <!-- notification-->
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="ion-ios7-bell noti-icon"></i>
+                                    <span class="badge badge-danger noti-icon-badge">3</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5>Notification (3)</h5>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details"><b>Your order is placed</b><small class="text-muted">Dummy text of the printing and typesetting
+                                                industry.</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                        <p class="notify-details"><b>New Message received</b><small class="text-muted">You have 87 unread messages</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-martini"></i></div>
+                                        <p class="notify-details"><b>Your item is shipped</b><small class="text-muted">It is a long established fact that a reader
+                                                will</small></p>
+                                    </a>
+
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        View All
+                                    </a>
+
+                                </div>
+                            </li>
+                            <!-- User-->
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <img src="/uploads/perfil/default.png" alt="user" class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                    <a class="dropdown-item" href="http://oleohidraulica.aplicaciones-csge.com/user/profile"><i class="dripicons-user text-muted"></i>
+                                        Mi Perfil</a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <a class="dropdown-item" href="#" onclick="document.getElementById('cerrar').click();"><i class="dripicons-exit text-muted"></i>
+                                        <span>Cerrar sesión</span>
+                                    </a>
+                                    <form action="/logout" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="4iBuIoyO0CfOKMzKqKqH40GGIjO6wbiFbcIA3gRs">                                        <button type="submit" id="cerrar" style="visibility: hidden;"></button>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                        <!-- Page title -->
+                        <ul class="list-inline menu-left mb-0">
+                            <li class="list-inline-item">
+                                <button type="button" class="button-menu-mobile open-left waves-effect">
+                                    <i class="ion-navicon"></i>
+                                </button>
+                            </li>
+                            <li class="hide-phone list-inline-item app-search">
+                                <h3 class="page-title">  Usuarios
+  
+</h3>
+                            </li>
+                                                    </ul>
+
+                        <div class="clearfix"></div>
+                    </nav>
+
+                </div>
+                <!-- Top Bar End -->
+
+
+                <div class="page-content-wrapper">
+
+                    <div id="app">
+
+
+                        <main class="py-4">
+                            
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="card m-b-30">
+          <div class="card-body">
+            <button class="btn-reg" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-plus"></i> Nuevo Usuario</button>
+            <hr>
+
+
+<div class="col-md-10 tablestyle table-responsive">
+            <div id="userTable_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="userTable_length"><label>Mostrar <select name="userTable_length" aria-controls="userTable" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> por pagina</label></div></div><div class="col-sm-12 col-md-6"><div id="userTable_filter" class="dataTables_filter"><label><input type="search" class="form-control form-control-sm" placeholder="Buscar" aria-controls="userTable"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="userTable" class="table table-light table-striped dataTable no-footer dtr-inline collapsed" role="grid" aria-describedby="userTable_info">
+              <thead class="thead-color">
+                <tr role="row"><th class="th-cl sorting_asc" tabindex="0" aria-controls="userTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="N°: activate to sort column descending">N°</th><th class="sorting" tabindex="0" aria-controls="userTable" rowspan="1" colspan="1" aria-label="Foto: activate to sort column ascending">Foto</th><th class="sorting" tabindex="0" aria-controls="userTable" rowspan="1" colspan="1" aria-label="Nombre: activate to sort column ascending">Nombre</th><th class="sorting" tabindex="0" aria-controls="userTable" rowspan="1" colspan="1" aria-label="Correo: activate to sort column ascending">Correo</th><th class="sorting" tabindex="0" aria-controls="userTable" rowspan="1" colspan="1" aria-label="Rol: activate to sort column ascending">Rol</th><th class="sorting" tabindex="0" aria-controls="userTable" rowspan="1" colspan="1" aria-label="Estado: activate to sort column ascending" style="display: none;">Estado</th><th class="th-cr sorting" tabindex="0" aria-controls="userTable" rowspan="1" colspan="1" aria-label="Opciones: activate to sort column ascending" style="display: none;">Opciones</th></tr>
+              </thead>
+
+              <tbody id="tableUserBody">                          <tr role="row" class="odd parent">
+            <td class="sorting_1" tabindex="0" style="">  22 </td>
+            <td>  <img src="uploads/perfil/default.png" width="50" class="img-fluid rounded-circle img-thumbnail" alt="foto"> </td>
+            <td>  Ortiz  </td>
+            <td>  jsortiz29@misena.edu.co </td>
+            <td>  super usuario </td>
+            <td style="display: none;">   <button type="button" onclick="change_state(
+              47
+            )" class="btn-close">Inactivo</button>  </td>
+            <td style="display: none;">
+            <button onclick="edit_user(
+              47)" class="btn-edit"><i class="fa fa-edit"></i></button>
+
+              <button onclick="show_user(
+                47)" class="btn-view"><i class="fa fa-eye"></i></button>
+
+                </td>
+                </tr><tr class="child"><td class="child" colspan="5"><ul data-dtr-index="21"><li data-dtr-index="5" data-dt-row="21" data-dt-column="5"><span class="dtr-title">Estado</span> <span class="dtr-data"><button type="button" onclick="change_state(
+              47
+            )" class="btn-close">Inactivo</button></span></li><li data-dtr-index="6" data-dt-row="21" data-dt-column="6"><span class="dtr-title">Opciones</span> <span class="dtr-data"><button onclick="edit_user(
+              47)" class="btn-edit"><i class="fa fa-edit"></i></button>
+
+              <button onclick="show_user(
+                47)" class="btn-view"><i class="fa fa-eye"></i></button></span></li></ul></td></tr></tbody>
+            </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="userTable_info" role="status" aria-live="polite">Mostrando 1 de 1 (filtered from 26 total records)</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="userTable_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="userTable_previous"><a href="#" aria-controls="userTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="userTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="userTable_next"><a href="#" aria-controls="userTable" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+          </div>
+
+
+
+
+          </div>
+        </div>
+      </div> <!-- end col -->
+    </div> <!-- end row -->
+
+
+    <!-- modal register users -->
+    <style>
+      input[type=number]::-webkit-inner-spin-button, 
+      input[type=number]::-webkit-outer-spin-button { 
+           -webkit-appearance: none; 
+           margin: 0; 
+           }
+      input[type=number] { -moz-appearance:textfield; }
+    </style>
+
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" style="justify-content: center;">
+            <h1>REGISTRAR NUEVO USUARIO</h1>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="post">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="col-md-12 col-form-label text-md-left" for="nombre">Nombre Completo</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Ingrese su nombre">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="col-md-12 col-form-label text-md-left" for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su Correo Electrónico">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="col-md-12 col-form-label text-md-left" for="identificacion">Identificación</label>
+                    <input type="number" class="form-control" name="identificacion" id="identificacion" placeholder="Ingrese su número de identificación">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="col-md-12 col-form-label text-md-left" for="Rol">Rol</label>
+                    <select class="form-control" name="rol" id="rol">
+                      <option value="">Seleccione rol</option>
+                                              <option value="1">super usuario</option>
+                                              <option value="2">administrador de flotas</option>
+                                              <option value="3">administrador de servicios</option>
+                                              <option value="4">mecánico</option>
+                                              <option value="5">técnico</option>
+                                          </select>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer" style="margin-top: 15px;">
+                <a data-dismiss="modal" onclick="cleanInputs()" class="btn-close "><p class="text-center">Cerrar</p></a>
+                <button type="button" onclick="register_user()" class="btn-env "><p class="text-center">
+                  Guardar</p>
+                </button>
+              </div>
+
+            </form>
+
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+    <!-- modal show users -->
+
+    <div class="modal fade show" tabindex="-1" id="show" role="dialog" aria-labelledby="myLargeModalLabel" style="padding-right: 17px; display: block;">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" style="justify-content: center;">
+            <h1>INFORMACIÓN DEL USUARIO</h1>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="post">
+
+              <div class="row">
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="col-md-12 col-form-label text-md-left" for="nombre">Nombre</label>
+                    <input type="text" id="names" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-12 col-form-label text-md-left" for="email">Correo Electrónico</label>
+                    <input type="email" id="emails" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-12 col-form-label text-md-left" for="identificacion">Identificación</label>
+                    <input type="number" id="identificacions" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-12 col-form-label text-md-left" for="Rol">Rol</label>
+                    <select class="form-control" name="rol" id="rol_update">
+                      <option class="form-control" value="">Seleccione rol</option>
+                                              <option value="1">super usuario</option>
+                                              <option value="2">administrador de flotas</option>
+                                              <option value="3">administrador de servicios</option>
+                                              <option value="4">mecánico</option>
+                                              <option value="5">técnico</option>
+                                          </select>
+                  </div>
+
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body" id="fotos">
+                <img src="uploads/perfil/default.png" width="160" class="img-rounded rounded-circle" alt=""></div>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="modal-footer" style="margin-top: 15px;">
+                <a data-dismiss="modal" onclick="cleanInputsUpdate()" class="btn-close "><p class="text-center">Cerrar</p></a>
+                <button id="buttonEdit" type="button" class="btn-env " onclick="update_user(47)">
+                  <p class="text-center">
+                    Actualizar</p>
+                </button>
+              </div>
+
+
+
+            </form>
+
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+  </div>
+
+                        </main>
+
+                        <footer class="footer">
+                            © 2020 Oleohidraulica <i class="mdi mdi-heart text-danger"></i>
+                        </footer>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- content -->
+
+
+        </div>
+        <!-- End Right content here -->
+
+                <!-- ========== Left Sidebar Start ========== -->
+        <div class="left side-menu">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <div class="">
+                    <!--<a href="index.html" class="logo text-center">Fonik</a>-->
+                    <a href="#" class="logo"><img src="http://oleohidraulica.aplicaciones-csge.com/assets/images/logo_blanco.png" height="55" alt="logo"></a>
+                </div>
+            </div>
+
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 553px;"><div class="sidebar-inner slimscrollleft" style="overflow: hidden; width: auto; height: 553px;">
+                <div id="sidebar-menu" class="active">
+                    <ul>
+
+                        <li class="menu-title">Menú</li>
+
+                                                                                <li>
+                            <a href="/home" class="waves-effect"><i class="fa fa-home"></i><span>
+                                      Inicio </span></a>
+                          </li>
+                                                        <li class="active">
+                            <a href="/user" class="waves-effect active"><i class="fa fa-user"></i><span>
+                                      Usuarios </span></a>
+                          </li>
+                                                        <li>
+                            <a href="/cliente" class="waves-effect"><i class="fa fa-user-circle-o"></i><span>
+                                      Clientes </span></a>
+                          </li>
+                                                        <li>
+                            <a href="/cronograma" class="waves-effect"><i class="fa fa-calendar"></i><span>
+                                      Cronograma </span></a>
+                          </li>
+                                                                        </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div><div class="slimScrollBar" style="background: rgb(158, 165, 171); width: 10px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 553px;"></div><div class="slimScrollRail" style="width: 10px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+            <!-- end sidebarinner -->
+        </div>
+        <!-- Left Sidebar End -->
+
+        
+
+
+    </div>
+
+
+
+<!-- jQuery  -->
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/jquery.min.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/bootstrap.bundle.min.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/modernizr.min.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/jquery.slimscroll.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/waves.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/jquery.nicescroll.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/jquery.scrollTo.min.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/plugins/toastr/build/toast.min.js"></script>
+<link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/datatable.css" rel="stylesheet" type="text/css">
+
+
+
+
+  <script src="http://oleohidraulica.aplicaciones-csge.com/lowerScripts/users/users.js"></script>
+  <!-- Required datatable js -->
+  <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Buttons examples -->
+  <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+  <script src="assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+  <script src="assets/plugins/datatables/jszip.min.js"></script>
+  <script src="assets/plugins/datatables/pdfmake.min.js"></script>
+  <script src="assets/plugins/datatables/vfs_fonts.js"></script>
+  <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
+  <script src="assets/plugins/datatables/buttons.print.min.js"></script>
+  <script src="assets/plugins/datatables/buttons.colVis.min.js"></script>
+  <!-- Responsive examples -->
+  <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+  <script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+
+<!-- App js -->
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/app.js"></script>
+
+
+<div class="modal-backdrop fade show"></div><div class="jq-toast-wrap top-right"><div class="jq-toast-single jq-has-icon jq-toast-danger" style="text-align: left;"><span class="jq-toast-loader jq-toast-loaded" style="-webkit-transition: width 4.1s ease-in;                       -o-transition: width 4.1s ease-in;                       transition: width 4.1s ease-in;                       background-color: #000;"></span><span class="close-jq-toast-single">×</span><h2 class="jq-toast-heading">Error</h2>El campo identificacion no tiene los caracteres requeridos</div></div></body></html>

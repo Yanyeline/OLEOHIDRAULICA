@@ -1,0 +1,16 @@
+package com.aplicacionescsge.oleohidraulica.runners;
+
+import cucumber.api.CucumberOptions;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+import org.junit.runner.RunWith;
+
+@RunWith(CucumberWithSerenity.class)
+@CucumberOptions(
+        features = "src/test/resources/features/customer.feature",
+        tags = "@uno",
+        glue = {"com.aplicacionescsge.oleohidraulica.stepdefinitions"}
+)
+
+public class Customer {
+
+}

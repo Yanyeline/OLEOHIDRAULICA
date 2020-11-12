@@ -15,7 +15,6 @@ public class ConsultDetailsUser implements Task {
     String Search;
 
     public ConsultDetailsUser(String search) {
-
         Search = search;
     }
 
@@ -25,13 +24,14 @@ public class ConsultDetailsUser implements Task {
         actor.attemptsTo(
                 Click.on(UserPage.BTN_SORTING.of(Search)),
                 Click.on(UserPage.BTN_VIEW.of(Search))
-
         );
-
     }
 
-
     public static ConsultDetailsUser selectItem(String search) {
+        return instrumented(ConsultDetailsUser.class, search);
+    }
+
+    public static ConsultDetailsUser fillFields(String search) {
         return instrumented(ConsultDetailsUser.class, search);
     }
 

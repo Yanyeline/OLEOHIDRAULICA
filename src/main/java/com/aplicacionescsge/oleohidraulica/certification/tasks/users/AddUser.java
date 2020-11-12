@@ -15,17 +15,13 @@ public class AddUser implements Task {
     @Step("{0} add user")
     @Override
     public <T extends Actor> void performAs(T actor) {
-
         actor.attemptsTo(
                 Click.on(UserPage.BTN_SAVE)
         );
-
     }
 
 
     public static AddUser selectItem() {
         return instrumented(AddUser.class);
     }
-
-
 }

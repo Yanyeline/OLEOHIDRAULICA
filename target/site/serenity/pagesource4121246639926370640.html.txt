@@ -1,0 +1,541 @@
+<html lang="es" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths fa-events-icons-failed"><head>
+    <meta charset="utf-8">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="Oqx1njAAUMDPjjHIZF9XgWUMDD6zd5VqwBQLT9K0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta content="Admin Dashboard" name="description">
+    <meta content="Themesbrand" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- favicons -->
+
+
+    <title>
+        Inicio
+        | COC S.A.S
+        
+
+    </title>
+
+
+    <!-- App Icons -->
+    <!-- <link rel="shortcut icon" href="http://oleohidraulica.aplicaciones-csge.com/assets/images/favicon.ico"> -->
+
+    <link rel="shortcut icon" href="http://oleohidraulica.aplicaciones-csge.com/favicons/logo.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://oleohidraulica.aplicaciones-csge.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://oleohidraulica.aplicaciones-csge.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://oleohidraulica.aplicaciones-csge.com/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://oleohidraulica.aplicaciones-csge.com/favicons/android-chrome-192.png">
+
+
+
+     <!--Morris Chart CSS -->
+<link rel="stylesheet" href="http://oleohidraulica.aplicaciones-csge.com/assets/plugins/morris/morris.css">
+
+
+
+
+    <!-- Basic Css files -->
+    <link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="http://oleohidraulica.aplicaciones-csge.com/assets/plugins/toastr/build/toast.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&amp;display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/523b97355a.js"></script><link href="https://use.fontawesome.com/523b97355a.css" media="all" rel="stylesheet">
+
+
+</head>
+
+<body class="fixed-left" style="overflow: visible;">
+
+    <!-- Loader -->
+    <div id="preloader" style="display: none;">
+        <div id="status" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div id="wrapper">
+
+
+        <!-- Start right Content here -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+
+                <!-- Top Bar Start -->
+                <div class="topbar">
+
+                    <nav class="navbar-custom">
+                        <!-- Search input -->
+                                                <div class="search-wrap" id="search-wrap">
+                            <div class="search-bar">
+                                <input class="search-input" type="search" placeholder="Search">
+                                <a href="#" class="close-search toggle-search" data-target="#search-wrap">
+                                    <i class="mdi mdi-close-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                        <ul class="list-inline float-right mb-0">
+                                                        <!-- Search -->
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link waves-effect toggle-search" href="#" data-target="#search-wrap">
+                                    <i class="mdi mdi-magnify noti-icon"></i>
+                                </a>
+                            </li>
+                            <!-- Fullscreen -->
+                            <li class="list-inline-item dropdown notification-list hidden-xs-down">
+                                <a class="nav-link waves-effect" href="#" id="btn-fullscreen">
+                                    <i class="mdi mdi-fullscreen noti-icon"></i>
+                                </a>
+                            </li>
+                            <!-- notification-->
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="ion-ios7-bell noti-icon"></i>
+                                    <span class="badge badge-danger noti-icon-badge">3</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5>Notification (3)</h5>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details"><b>Your order is placed</b><small class="text-muted">Dummy text of the printing and typesetting
+                                                industry.</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                        <p class="notify-details"><b>New Message received</b><small class="text-muted">You have 87 unread messages</small></p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-martini"></i></div>
+                                        <p class="notify-details"><b>Your item is shipped</b><small class="text-muted">It is a long established fact that a reader
+                                                will</small></p>
+                                    </a>
+
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        View All
+                                    </a>
+
+                                </div>
+                            </li>
+                            <!-- User-->
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <img src="/uploads/perfil/default.png" alt="user" class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                    <a class="dropdown-item" href="http://oleohidraulica.aplicaciones-csge.com/user/profile"><i class="dripicons-user text-muted"></i>
+                                        Mi Perfil</a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <a class="dropdown-item" href="#" onclick="document.getElementById('cerrar').click();"><i class="dripicons-exit text-muted"></i>
+                                        <span>Cerrar sesión</span>
+                                    </a>
+                                    <form action="/logout" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="Oqx1njAAUMDPjjHIZF9XgWUMDD6zd5VqwBQLT9K0">                                        <button type="submit" id="cerrar" style="visibility: hidden;"></button>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                        <!-- Page title -->
+                        <ul class="list-inline menu-left mb-0">
+                            <li class="list-inline-item">
+                                <button type="button" class="button-menu-mobile open-left waves-effect">
+                                    <i class="ion-navicon"></i>
+                                </button>
+                            </li>
+                            <li class="hide-phone list-inline-item app-search">
+                                <h3 class="page-title">Inicio
+
+</h3>
+                            </li>
+                                                    </ul>
+
+                        <div class="clearfix"></div>
+                    </nav>
+
+                </div>
+                <!-- Top Bar End -->
+
+
+                <div class="page-content-wrapper">
+
+                    <div id="app">
+
+
+                        <main class="py-4">
+                            <div class="header-bg">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mb-4 pt-5">
+                <div id="morris-bar-example" class="dash-chart" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="300" version="1.1" width="1079" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="32.859375" y="261" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#ffffff" d="M45.359375,261H1054" stroke-opacity="0.1" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="202" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">25</tspan></text><path fill="none" stroke="#ffffff" d="M45.359375,202H1054" stroke-opacity="0.1" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="143" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50</tspan></text><path fill="none" stroke="#ffffff" d="M45.359375,143H1054" stroke-opacity="0.1" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="84" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">75</tspan></text><path fill="none" stroke="#ffffff" d="M45.359375,84H1054" stroke-opacity="0.1" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text><path fill="none" stroke="#ffffff" d="M45.359375,25H1054" stroke-opacity="0.1" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="1015.2061298076923" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2018</tspan></text><text x="937.6183894230769" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2017</tspan></text><text x="860.0306490384615" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2016</tspan></text><text x="782.4429086538462" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2015</tspan></text><text x="704.8551682692307" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2014</tspan></text><text x="627.2674278846154" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan></text><text x="549.6796875" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><text x="472.09194711538464" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan></text><text x="394.5042067307692" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2010</tspan></text><text x="316.91646634615387" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2009</tspan></text><text x="239.32872596153845" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2008</tspan></text><text x="161.7409855769231" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2007</tspan></text><text x="84.1532451923077" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#98a6ad" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2006</tspan></text><rect x="76.39447115384615" y="25" width="6.258774038461539" height="236" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="85.6532451923077" y="48.60000000000002" width="6.258774038461539" height="212.39999999999998" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="153.98221153846154" y="84" width="6.258774038461539" height="177" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="163.2409855769231" y="107.6" width="6.258774038461539" height="153.4" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="231.56995192307693" y="143" width="6.258774038461539" height="118" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="240.82872596153845" y="166.60000000000002" width="6.258774038461539" height="94.39999999999998" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="309.15769230769234" y="84" width="6.258774038461539" height="177" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="318.41646634615387" y="107.6" width="6.258774038461539" height="153.4" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="386.7454326923077" y="143" width="6.258774038461539" height="118" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="396.0042067307692" y="166.60000000000002" width="6.258774038461539" height="94.39999999999998" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="464.33317307692306" y="84" width="6.258774038461539" height="177" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="473.5919471153846" y="107.6" width="6.258774038461539" height="153.4" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="541.9209134615385" y="25" width="6.258774038461539" height="236" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="551.1796875" y="48.60000000000002" width="6.258774038461539" height="212.39999999999998" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="619.508653846154" y="48.60000000000002" width="6.258774038461539" height="212.39999999999998" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="628.7674278846155" y="84" width="6.258774038461539" height="177" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="697.0963942307692" y="84" width="6.258774038461539" height="177" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="706.3551682692307" y="107.6" width="6.258774038461539" height="153.4" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="774.6841346153847" y="143" width="6.258774038461539" height="118" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="783.9429086538462" y="166.60000000000002" width="6.258774038461539" height="94.39999999999998" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="852.2718749999999" y="84" width="6.258774038461539" height="177" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="861.5306490384614" y="107.6" width="6.258774038461539" height="153.4" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="929.8596153846154" y="25" width="6.258774038461539" height="236" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="939.1183894230769" y="48.60000000000002" width="6.258774038461539" height="212.39999999999998" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="1007.4473557692309" y="48.60000000000002" width="6.258774038461539" height="212.39999999999998" rx="0" ry="0" fill="#2f8ee0" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="1016.7061298076924" y="84" width="6.258774038461539" height="177" rx="0" ry="0" fill="#4bbbce" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect></svg><div class="morris-hover morris-default-style" style="display: none;"></div></div>
+
+                <div class="mt-4 text-center">
+                    <button type="button" class="btn btn-outline-primary ml-1 waves-effect waves-light">Year
+                        2017</button>
+                    <button type="button" class="btn btn-outline-info ml-1 waves-effect waves-light">Year
+                        2018</button>
+                    <button type="button" class="btn btn-outline-primary ml-1 waves-effect waves-light">Year
+                        2019</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-xl-3">
+            <div class="card text-center m-b-30">
+                <div class="mb-2 card-body text-muted">
+                    <h3 class="text-info">15,852</h3>
+                    Monthly Statistics
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+            <div class="card text-center m-b-30">
+                <div class="mb-2 card-body text-muted">
+                    <h3 class="text-purple">9,514</h3>
+                    New Orders
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+            <div class="card text-center m-b-30">
+                <div class="mb-2 card-body text-muted">
+                    <h3 class="text-primary">289</h3>
+                    New Users
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+            <div class="card text-center m-b-30">
+                <div class="mb-2 card-body text-muted">
+                    <h3 class="text-danger">5,220</h3>
+                    Unique Visitors
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end row -->
+
+    <div class="row">
+
+        <div class="col-xl-4">
+            <div class="card m-b-30">
+                <div class="card-body">
+                    <h4 class="mt-0 header-title">Monthly Earnings</h4>
+
+                    <div class="row text-center m-t-20">
+                        <div class="col-6">
+                            <h5 class="">56241</h5>
+                            <p class="text-muted font-14">Marketplace</p>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="">23651</h5>
+                            <p class="text-muted font-14">Total Income</p>
+                        </div>
+                    </div>
+
+                    <div id="morris-donut-example" class="dash-chart"><svg height="300" version="1.1" width="286" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#f0f1f4" d="M143.164,238.776A88.776,88.776,0,0,0,220.07148384915632,194.34430182099788" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#f0f1f4" stroke="#ffffff" d="M143.164,241.776A91.776,91.776,0,0,0,222.67041206790316,195.8428251320616L254.1936787424898,214.01891387972393A128.164,128.164,0,0,1,143.164,278.164Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#2f8ee0" d="M220.07148384915632,194.34430182099788A88.776,88.776,0,1,0,55.234997870046854,137.76608155860526" stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path><path fill="#2f8ee0" stroke="#ffffff" d="M222.67041206790316,195.8428251320616A91.776,91.776,0,1,0,52.26362039877242,137.3526617680742L11.270496805070309,131.6491223379079A133.164,133.164,0,1,1,258.5252257737345,216.5164527314968Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#4bbbce" d="M55.234997870046854,137.76608155860526A88.776,88.776,0,0,0,143.13611019751718,238.77599561908005" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#4bbbce" stroke="#ffffff" d="M52.26362039877242,137.3526617680742A91.776,91.776,0,0,0,143.13516771973661,241.77599547103597L143.12373609257673,278.1639936753602A128.164,128.164,0,0,1,16.222792590527703,132.33815532212628Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="143.164" y="140" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="15px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 15px; font-weight: 800;" font-weight="800" transform="matrix(2.0176,0,0,2.0176,-145.689,-153.6631)" stroke-width="0.49562944940073894"><tspan dy="6" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Online</tspan></text><text x="143.164" y="160" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 14px;" transform="matrix(1.8495,0,0,1.8495,-121.7108,-129.124)" stroke-width="0.5406866720735334"><tspan dy="5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">42</tspan></text></svg></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-8">
+            <div class="card m-b-30">
+                <div class="card-body">
+                    <h4 class="mt-0 header-title">Email Sent</h4>
+
+                    <div class="row text-center m-t-20">
+                        <div class="col-4">
+                            <h5 class="">56241</h5>
+                            <p class="text-muted font-14">Marketplace</p>
+                        </div>
+                        <div class="col-4">
+                            <h5 class="">23651</h5>
+                            <p class="text-muted font-14">Total Income</p>
+                        </div>
+                        <div class="col-4">
+                            <h5 class="">23651</h5>
+                            <p class="text-muted font-14">Last Month</p>
+                        </div>
+                    </div>
+
+                    <div id="morris-area-example" class="dash-chart" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="300" version="1.1" width="643" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.328125px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="32.859375" y="261" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#eeeeee" d="M45.359375,261H617.656" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="202" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text><path fill="none" stroke="#eeeeee" d="M45.359375,202H617.656" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="143" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">200</tspan></text><path fill="none" stroke="#eeeeee" d="M45.359375,143H617.656" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="84" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">300</tspan></text><path fill="none" stroke="#eeeeee" d="M45.359375,84H617.656" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">400</tspan></text><path fill="none" stroke="#eeeeee" d="M45.359375,25H617.656" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="617.656" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan></text><text x="522.0991730155109" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><text x="426.80343025775545" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan></text><text x="331.5076875" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2010</tspan></text><text x="236.21194474224453" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2009</tspan></text><text x="140.65511775775548" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2008</tspan></text><text x="45.359375" y="273.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2007</tspan></text><path fill="#f4f4f4" stroke="none" d="M45.359375,261C69.18331068943887,238.875,116.83118206831661,176.9189466484268,140.65511775775548,172.5C164.54432450387773,168.06894664842682,212.32273799612227,227.8155266757866,236.21194474224453,225.6C260.0358804316834,223.3905266757866,307.6837518105611,157.01250000000002,331.5076875,154.8C355.33162318943886,152.5875,402.97949456831657,200.15625,426.80343025775545,207.9C450.62736594719433,215.64375,498.27523732607204,212.3310533515732,522.0991730155109,216.75C545.9883797616332,221.18105335157318,593.7667932538777,236.66250000000002,617.656,243.3L617.656,261L45.359375,261Z" fill-opacity="0.6" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.6;"></path><path fill="none" stroke="#cccccc" d="M45.359375,261C69.18331068943887,238.875,116.83118206831661,176.9189466484268,140.65511775775548,172.5C164.54432450387773,168.06894664842682,212.32273799612227,227.8155266757866,236.21194474224453,225.6C260.0358804316834,223.3905266757866,307.6837518105611,157.01250000000002,331.5076875,154.8C355.33162318943886,152.5875,402.97949456831657,200.15625,426.80343025775545,207.9C450.62736594719433,215.64375,498.27523732607204,212.3310533515732,522.0991730155109,216.75C545.9883797616332,221.18105335157318,593.7667932538777,236.66250000000002,617.656,243.3" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.359375" cy="261" r="0" fill="#cccccc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="140.65511775775548" cy="172.5" r="0" fill="#cccccc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="236.21194474224453" cy="225.6" r="0" fill="#cccccc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="331.5076875" cy="154.8" r="0" fill="#cccccc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="426.80343025775545" cy="207.9" r="0" fill="#cccccc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="522.0991730155109" cy="216.75" r="0" fill="#cccccc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="617.656" cy="243.3" r="0" fill="#cccccc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#65a7e0" stroke="none" d="M45.359375,261C69.18331068943887,254.3625,116.83118206831661,245.49736662106702,140.65511775775548,234.45C164.54432450387773,223.37236662106702,212.32273799612227,171.835341997264,236.21194474224453,172.5C260.0358804316834,173.16284199726402,307.6837518105611,233.1225,331.5076875,239.76C355.33162318943886,246.39749999999998,402.97949456831657,240.64499999999998,426.80343025775545,225.6C450.62736594719433,210.555,498.27523732607204,117.1905266757866,522.0991730155109,119.4C545.9883797616332,121.6155266757866,593.7667932538777,212.32500000000002,617.656,243.3L617.656,261L45.359375,261Z" fill-opacity="0.6" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.6;"></path><path fill="none" stroke="#2f8ee0" d="M45.359375,261C69.18331068943887,254.3625,116.83118206831661,245.49736662106702,140.65511775775548,234.45C164.54432450387773,223.37236662106702,212.32273799612227,171.835341997264,236.21194474224453,172.5C260.0358804316834,173.16284199726402,307.6837518105611,233.1225,331.5076875,239.76C355.33162318943886,246.39749999999998,402.97949456831657,240.64499999999998,426.80343025775545,225.6C450.62736594719433,210.555,498.27523732607204,117.1905266757866,522.0991730155109,119.4C545.9883797616332,121.6155266757866,593.7667932538777,212.32500000000002,617.656,243.3" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.359375" cy="261" r="0" fill="#2f8ee0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="140.65511775775548" cy="234.45" r="0" fill="#2f8ee0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="236.21194474224453" cy="172.5" r="0" fill="#2f8ee0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="331.5076875" cy="239.76" r="0" fill="#2f8ee0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="426.80343025775545" cy="225.6" r="0" fill="#2f8ee0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="522.0991730155109" cy="119.4" r="0" fill="#2f8ee0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="617.656" cy="243.3" r="0" fill="#2f8ee0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#7cc8d5" stroke="none" d="M45.359375,261C69.18331068943887,258.7875,116.83118206831661,261,140.65511775775548,252.15C164.54432450387773,237.74907660738714,212.32273799612227,146.39310533515732,236.21194474224453,145.95C260.0358804316834,145.5081053351573,307.6837518105611,260.77875,331.5076875,248.61C355.33162318943886,236.44125000000003,402.97949456831657,55.901250000000026,426.80343025775545,48.60000000000002C450.62736594719433,41.29875000000002,498.27523732607204,165.89579343365253,522.0991730155109,190.2C545.9883797616332,214.5707934336525,593.7667932538777,230.025,617.656,243.3L617.656,261L45.359375,261Z" fill-opacity="0.6" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.6;"></path><path fill="none" stroke="#4bbbce" d="M45.359375,261C69.18331068943887,258.7875,116.83118206831661,261,140.65511775775548,252.15C164.54432450387773,237.74907660738714,212.32273799612227,146.39310533515732,236.21194474224453,145.95C260.0358804316834,145.5081053351573,307.6837518105611,260.77875,331.5076875,248.61C355.33162318943886,236.44125000000003,402.97949456831657,55.901250000000026,426.80343025775545,48.60000000000002C450.62736594719433,41.29875000000002,498.27523732607204,165.89579343365253,522.0991730155109,190.2C545.9883797616332,214.5707934336525,593.7667932538777,230.025,617.656,243.3" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.359375" cy="261" r="0" fill="#4bbbce" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="140.65511775775548" cy="252.15" r="0" fill="#4bbbce" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="236.21194474224453" cy="145.95" r="0" fill="#4bbbce" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="331.5076875" cy="248.61" r="0" fill="#4bbbce" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="426.80343025775545" cy="48.60000000000002" r="0" fill="#4bbbce" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="522.0991730155109" cy="190.2" r="0" fill="#4bbbce" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="617.656" cy="243.3" r="0" fill="#4bbbce" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="display: none;"></div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end row -->
+
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="card m-b-30">
+                <div class="card-body">
+                    <h4 class="mt-0 m-b-30 header-title">Latest Transactions</h4>
+
+                    <div class="table-responsive">
+                        <table class="table m-t-20 mb-0 table-vertical">
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="assets/images/users/avatar-2.jpg" alt="user-image" class="thumb-sm rounded-circle mr-2"> Herbert C. Patton
+                                    </td>
+                                    <td><i class="mdi mdi-checkbox-blank-circle text-success"></i> Confirm
+                                    </td>
+                                    <td>
+                                        $14,584
+                                        <p class="m-0 text-muted font-14">Amount</p>
+                                    </td>
+                                    <td>
+                                        5/12/2016
+                                        <p class="m-0 text-muted font-14">Date</p>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-sm waves-effect">Edit</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <img src="assets/images/users/avatar-3.jpg" alt="user-image" class="thumb-sm rounded-circle mr-2"> Mathias N. Klausen
+                                    </td>
+                                    <td><i class="mdi mdi-checkbox-blank-circle text-warning"></i> Waiting payment</td>
+                                    <td>
+                                        $8,541
+                                        <p class="m-0 text-muted font-14">Amount</p>
+                                    </td>
+                                    <td>
+                                        10/11/2016
+                                        <p class="m-0 text-muted font-14">Date</p>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-sm waves-effect">Edit</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <img src="assets/images/users/avatar-4.jpg" alt="user-image" class="thumb-sm rounded-circle mr-2"> Nikolaj S. Henriksen
+                                    </td>
+                                    <td><i class="mdi mdi-checkbox-blank-circle text-success"></i> Confirm
+                                    </td>
+                                    <td>
+                                        $954
+                                        <p class="m-0 text-muted font-14">Amount</p>
+                                    </td>
+                                    <td>
+                                        8/11/2016
+                                        <p class="m-0 text-muted font-14">Date</p>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-sm waves-effect">Edit</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <img src="assets/images/users/avatar-5.jpg" alt="user-image" class="thumb-sm rounded-circle mr-2"> Lasse C. Overgaard
+                                    </td>
+                                    <td><i class="mdi mdi-checkbox-blank-circle text-danger"></i> Payment expired</td>
+                                    <td>
+                                        $44,584
+                                        <p class="m-0 text-muted font-14">Amount</p>
+                                    </td>
+                                    <td>
+                                        7/11/2016
+                                        <p class="m-0 text-muted font-14">Date</p>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-sm waves-effect">Edit</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <img src="assets/images/users/avatar-6.jpg" alt="user-image" class="thumb-sm rounded-circle mr-2"> Kasper S. Jessen
+                                    </td>
+                                    <td><i class="mdi mdi-checkbox-blank-circle text-success"></i> Confirm
+                                    </td>
+                                    <td>
+                                        $8,844
+                                        <p class="m-0 text-muted font-14">Amount</p>
+                                    </td>
+                                    <td>
+                                        1/11/2016
+                                        <p class="m-0 text-muted font-14">Date</p>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-sm waves-effect">Edit</button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4">
+            <div class="card m-b-30">
+                <div class="card-body">
+                    <h4 class="mt-0 m-b-15 header-title">Recent Activity Feed</h4>
+
+                    <ol class="activity-feed mb-0">
+                        <li class="feed-item">
+                            <span class="date">Sep 25</span>
+                            <span class="activity-text">Responded to need “Volunteer
+                                Activities”</span>
+                        </li>
+
+                        <li class="feed-item">
+                            <span class="date">Sep 24</span>
+                            <span class="activity-text">Added an interest “Volunteer
+                                Activities”</span>
+                        </li>
+                        <li class="feed-item">
+                            <span class="date">Sep 23</span>
+                            <span class="activity-text">Joined the group “Boardsmanship
+                                Forum”</span>
+                        </li>
+                        <li class="feed-item">
+                            <span class="date">Sep 21</span>
+                            <span class="activity-text">Responded to need “In-Kind
+                                Opportunity”</span>
+                        </li>
+                        <li class="feed-item">
+                            <span class="date">Sep 18</span>
+                            <span class="activity-text">Created need “Volunteer Activities”</span>
+                        </li>
+                        <li class="feed-item">
+                            <span class="date">Sep 17</span>
+                            <span class="activity-text">Attending the event “Some New Event”.
+                                Responded to needed.</span>
+                        </li>
+                        <li class="feed-item pb-1">
+                            <span class="activity-text">
+                                <a href="" class="text-primary">More Activities</a>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- end row -->
+
+</div>
+                        </main>
+
+                        <footer class="footer">
+                            © 2020 Oleohidraulica <i class="mdi mdi-heart text-danger"></i>
+                        </footer>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- content -->
+
+
+        </div>
+        <!-- End Right content here -->
+
+                <!-- ========== Left Sidebar Start ========== -->
+        <div class="left side-menu">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <div class="">
+                    <!--<a href="index.html" class="logo text-center">Fonik</a>-->
+                    <a href="#" class="logo"><img src="http://oleohidraulica.aplicaciones-csge.com/assets/images/logo_blanco.png" height="55" alt="logo"></a>
+                </div>
+            </div>
+
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 553px;"><div class="sidebar-inner slimscrollleft" style="overflow: hidden; width: auto; height: 553px;">
+                <div id="sidebar-menu" class="active">
+                    <ul>
+
+                        <li class="menu-title">Menú</li>
+
+                                                                                <li class="active">
+                            <a href="/home" class="waves-effect active"><i class="fa fa-home"></i><span>
+                                      Inicio </span></a>
+                          </li>
+                                                        <li>
+                            <a href="/user" class="waves-effect"><i class="fa fa-user"></i><span>
+                                      Usuarios </span></a>
+                          </li>
+                                                        <li>
+                            <a href="/cliente" class="waves-effect"><i class="fa fa-user-circle-o"></i><span>
+                                      Clientes </span></a>
+                          </li>
+                                                        <li>
+                            <a href="/cronograma" class="waves-effect"><i class="fa fa-calendar"></i><span>
+                                      Cronograma </span></a>
+                          </li>
+                                                                        </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div><div class="slimScrollBar" style="background: rgb(158, 165, 171); width: 10px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 553px;"></div><div class="slimScrollRail" style="width: 10px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+            <!-- end sidebarinner -->
+        </div>
+        <!-- Left Sidebar End -->
+
+        
+
+
+    </div>
+
+
+
+<!-- jQuery  -->
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/jquery.min.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/bootstrap.bundle.min.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/modernizr.min.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/jquery.slimscroll.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/waves.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/jquery.nicescroll.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/jquery.scrollTo.min.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/plugins/toastr/build/toast.min.js"></script>
+<link href="http://oleohidraulica.aplicaciones-csge.com/assets/css/datatable.css" rel="stylesheet" type="text/css">
+
+
+
+
+<!--Morris Chart-->
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/plugins/morris/morris.min.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/plugins/raphael/raphael-min.js"></script>
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/pages/dashboard.js"></script>
+
+
+<!-- App js -->
+<script src="http://oleohidraulica.aplicaciones-csge.com/assets/js/app.js"></script>
+
+
+</body></html>
