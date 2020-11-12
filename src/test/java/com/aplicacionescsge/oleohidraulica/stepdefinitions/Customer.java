@@ -3,15 +3,9 @@ package com.aplicacionescsge.oleohidraulica.stepdefinitions;
 import com.aplicacionescsge.oleohidraulica.certification.pages.CustomerPage;
 import com.aplicacionescsge.oleohidraulica.certification.questions.ResultSearch;
 import com.aplicacionescsge.oleohidraulica.certification.questions.ResultSearchUpdatedCustomer;
-import com.aplicacionescsge.oleohidraulica.certification.questions.ResultSearchUpdatedUser;
-import com.aplicacionescsge.oleohidraulica.certification.tasks.customer.AddCustomer;
-import com.aplicacionescsge.oleohidraulica.certification.tasks.customer.ConsultCustomer;
-import com.aplicacionescsge.oleohidraulica.certification.tasks.customer.DetailsCustomer;
-import com.aplicacionescsge.oleohidraulica.certification.tasks.customer.EnterRegistrationDataC;
-import cucumber.api.java.en.And;
+import com.aplicacionescsge.oleohidraulica.certification.tasks.customer.*;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
-import net.serenitybdd.screenplay.Performable;
 
 import java.util.List;
 import java.util.Map;
@@ -54,4 +48,16 @@ public class Customer {
     public void userSelectAnCustomer(String search) {
         theActorInTheSpotlight().attemptsTo(DetailsCustomer.selectItem(search));
     }
+
+    //Update customer
+    @When("^user looks for customer (.*) to update their information$")
+    public void userLooksForCustomerToUpdateTheirInformation(String search) {
+        theActorInTheSpotlight().attemptsTo(EditCustomer.fillFields(search));
+    }
+
+    @When("^user enters data$")
+    public void userEntersData(List<Map<String, String>> data) {
+        theActorInTheSpotlight().attemptsTo(UpdateCustomer.fillFields(data));
+    }
+
 }

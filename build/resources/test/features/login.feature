@@ -26,7 +26,7 @@ Feature: Login
 
   Scenario Outline: User can log out
     Given user is on the login page
-    When user enter email "<email>" and Password "<password>" and click the log In button
+    When user enter email "<email>" and Password "<password>" and click the Iniciar sesión button
     And user go to the Inicio | COC S.A.S page
     Then User closes session
     And user go to the COC SAS - Inicio de sesión page

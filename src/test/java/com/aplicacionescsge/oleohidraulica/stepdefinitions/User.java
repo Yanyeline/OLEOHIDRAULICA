@@ -5,6 +5,7 @@ import com.aplicacionescsge.oleohidraulica.certification.pages.UserPage;
 import com.aplicacionescsge.oleohidraulica.certification.questions.*;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.users.*;
 
+
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -71,6 +72,7 @@ public class User {
         theActorInTheSpotlight().should(seeThat(ResultSearchUpdatedUser.isVisible(data)));
     }
 
+    //eliminar
     @Then("^user sees employee information$")
     public void userSeesEmployeeInformation(List<Map<String, String>> data) {
         theActorInTheSpotlight().should(seeThat(ResultSearchUpdatedUser.isVisible(data)));

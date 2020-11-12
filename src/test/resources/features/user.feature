@@ -5,8 +5,8 @@ Feature: Manage user
 
 
   Scenario: User can consult the information of a user
-    When user searches for the employee Marcos
-    Then user sees employee information Marcos
+    When user searches for the employee Socorrot
+    Then user sees employee information Socorrot
 
 
   Scenario Outline: User can register employee successfully
@@ -17,7 +17,7 @@ Feature: Manage user
     Then user registers employee <name>
     Examples:
       | name         | email              | id         | role                       |
-      | Miguel Bueno | miguelb@prueba.com | 1005590081 | administrador de servicios |
+      | NewUser | newuser@prueba.com | 3025590081 | administrador de servicios |
 
 
   Scenario Outline: User can cancel register employee
@@ -30,9 +30,9 @@ Feature: Manage user
       | name   | email               | id         | role                    |
       | Andres | andres12@prueba.com | 1855518081 | administrador de flotas |
 
-@uno
+
   Scenario Outline: User can modify register employee
-    When user looks for employee Socorro to update their information
+    When user looks for employee Socorrot to update their information
     And user enters new data
       | name   | email   | id   | role   |
       | <name> | <email> | <id> | <role> |
@@ -43,29 +43,19 @@ Feature: Manage user
       | <name> | <email> | <id> | <role> |
     Examples:
       | name      | email              | id         | role                       |
-      | Socorrito | socor48@prueba.com | 1547518001 | administrador de servicios |
+      | Socorrit | socor48@prueba.com | 1547518001 | administrador de servicios |
 
 
   Scenario Outline: User can consult the details of a employee
     When user searches for the employee <email>
     And user sees the detailed information of the employee <email>
-    Then user sees employee information
+    Then user sees updated employee information
       | name   | email   | id   | role   |
       | <name> | <email> | <id> | <role> |
     Examples:
       | name  | email                    | id         | role          |
       | Ortiz |  jsortiz29@misena.edu.co | 12345678   | super usuario |
 
-
-  Scenario Outline: User can enable an employee
-    When user searches for the employee <email>
-    And user select a employee disable "<email>"
-    And User closes session
-    And user enter email "<email>" and Password "<password>" and click the log In button
-    Then user go to the Inicio | COC S.A.S page
-    Examples:
-      | email                   | password  |
-      | jsortiz29@misena.edu.co | 12345678  |
 
 
   Scenario: User can enable an employee
@@ -85,3 +75,14 @@ Feature: Manage user
     Examples:
       | name  | email                   | id       | role          |
       | Ortiz | jsortiz29@misena.edu.co | 12345678 | super usuario |
+
+
+  Scenario Outline: User can enable an employee
+    When user searches for the employee <email>
+    And user select a employee disable <email>
+    And User closes session
+    And user enter email "<email>" and Password "<password>" and click the log In button
+    Then user go to the Inicio | COC S.A.S page
+    Examples:
+      | email                   | password  |
+      | jsortiz29@misena.edu.co | 12345678  |

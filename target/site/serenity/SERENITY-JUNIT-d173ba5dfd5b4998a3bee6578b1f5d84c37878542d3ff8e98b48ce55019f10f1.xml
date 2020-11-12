@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Manage user" skipped="0" tests="3" time="154.32" timestamp="2020-10-26 04:03:59"><testcase name="User can consult the details of a employee"/><testcase name="User can enable an employee"/><testcase name="User can cancel update for an employee"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Manage user" skipped="0" tests="1" time="58.03" timestamp="2020-10-29 03:10:32"><testcase name="User can consult the details of a employee"/></testsuite>
