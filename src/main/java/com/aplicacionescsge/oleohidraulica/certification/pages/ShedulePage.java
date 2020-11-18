@@ -19,29 +19,41 @@ public class ShedulePage {
             "//tbody//parent::tr[td[contains(text(),'{0}')]]//parent::tbody//child::tr//td[@class='child']//button[@class='btn-view']");
 
 
-
     public static Target DDL_PLANT = Target.the("").located(By.id("planta"));
     public static Target DDL_PLANT_OPTION = Target.the("").locatedBy(
             "//div[@class='form-group']//select[@id='planta']//option[contains(text(),'{0}')]");
-
     public static Target TXT_EXECUTANT = Target.the("").located(By.id("ejecutor"));
     public static Target DDL_LOCATION = Target.the("").located(By.id("ubicacion"));
     public static Target DDL_LOCATION_OPTION = Target.the("").locatedBy(
             "//div[@class='form-group']//select[@id='ubicacion']//option[contains(text(),'{0}')]");
-
     public static Target TXT_START_DATE = Target.the("").located(By.id("fechaTemprano"));
     public static Target TXT_TEAM = Target.the("").located(By.id("equipo"));
     public static Target TXT_START_END_DATE = Target.the("").located(By.id("fechaFinTemprano"));
     public static Target TXT_DENOMINATION = Target.the("").located(By.id("denominacion"));
-
     public static Target TXT_START_TIME = Target.the("").located(By.id("horaTemprano"));
-
     public static Target TXT_ORDER = Target.the("").located(By.id("orden"));
     public static Target TXT_START_END_TIME = Target.the("").located(By.id("horaFinTemprano"));
     public static Target TXT_OPERATION = Target.the("").located(By.id("operacion"));
-
     public static Target BTN_SAVE = Target.the("").located(By.xpath("//button[@class='btn-env ']//p[contains(text(),'Guardar')]"));
     public static Target BTN_CLOSE = Target.the("").located(By.xpath("(//a[@class='btn-close ']//p[contains(text(),'Cerrar')])[1]"));
+
+
+    public static Target DDL_PLANT_UPDATE = Target.the("").located(By.id("planta_update"));
+    public static Target DDL_PLANT_OPTION_UPDATE = Target.the("").locatedBy(
+            "//div[@class='form-group']//select[@id='planta_update']//option[contains(text(),'{0}')]");
+    public static Target TXT_EXECUTANT_UPDATE = Target.the("").located(By.id("ejecutor_update"));
+    public static Target DDL_LOCATION_UPDATE = Target.the("").located(By.id("ubicacion_update"));
+    public static Target DDL_LOCATION_OPTION_UPDATE = Target.the("").locatedBy(
+            "//div[@class='form-group']//select[@id='ubicacion_update']//option[contains(text(),'{0}')]");
+    public static Target TXT_START_DATE_UPDATE = Target.the("").located(By.id("fechaTemprano_update"));
+    public static Target TXT_TEAM_UPDATE = Target.the("").located(By.id("equipo_update"));
+    public static Target TXT_START_END_DATE_UPDATE = Target.the("").located(By.id("fechaFinTemprano_update"));
+    public static Target TXT_DENOMINATION_UPDATE = Target.the("").located(By.id("denominacion_update"));
+    public static Target TXT_START_TIME_UPDATE = Target.the("").located(By.id("horaTemprano_update"));
+    public static Target TXT_ORDER_UPDATE = Target.the("").located(By.id("orden_update"));
+    public static Target TXT_START_END_TIME_UPDATE = Target.the("").located(By.id("horaFinTemprano_update"));
+    public static Target TXT_OPERATION_UPDATE = Target.the("").located(By.id("operacion_update"));
+    public static Target BTN_UPDATE = Target.the("").located(By.id("buttonEdit"));
 
 
 }

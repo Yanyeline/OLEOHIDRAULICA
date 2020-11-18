@@ -3,7 +3,7 @@ Feature: Manage user
   Background: User is loged on page
     Given user is loged on page with email "administrador@gmail.com" and Password "password"
 
-
+@uno
   Scenario: User can consult the information of a user
     When user searches for the employee Marcos
     Then user sees employee information Marcos
@@ -30,7 +30,7 @@ Feature: Manage user
       | name   | email               | id         | role                    |
       | Andres | andres12@prueba.com | 1855518081 | administrador de flotas |
 
-@uno
+
   Scenario Outline: User can modify register employee
     When user looks for employee Socorrito to update their information
     And user enters new data

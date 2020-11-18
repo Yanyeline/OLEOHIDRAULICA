@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Upload;
 import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
@@ -28,6 +29,7 @@ public class ChangeProfileName implements Task {
                 Click.on(ProfilePage.BTN_CHANGE_NAME),
                 Enter.theValue(NameProfile).into(ProfilePage.TXT_NAME),
                 Click.on(ProfilePage.BTN_SAVE_NAME)
+                //Upload.theFile()
         );
     }
 

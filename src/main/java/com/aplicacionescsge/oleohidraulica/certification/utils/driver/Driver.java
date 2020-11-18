@@ -24,6 +24,11 @@ public class Driver {
         return new DriverTask(webDriver -> webDriver.switchTo().frame(index));
     }
 
+   /* public static Performable toUpload(int index) {
+        return new DriverTask(UploadToWebElement -> UploadToWebElement.);
+    }
+*/
+
     /*public static Performable scrollDown(int index) {
 
         return new DriverTask(webDriver -> webDriver.getWindowHandles().sc;

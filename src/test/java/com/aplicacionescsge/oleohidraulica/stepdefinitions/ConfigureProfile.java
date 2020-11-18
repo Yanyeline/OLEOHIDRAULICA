@@ -3,6 +3,7 @@ package com.aplicacionescsge.oleohidraulica.stepdefinitions;
 import com.aplicacionescsge.oleohidraulica.certification.pages.ProfilePage;
 import com.aplicacionescsge.oleohidraulica.certification.questions.Message;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.profile.ChangeProfileName;
+import com.aplicacionescsge.oleohidraulica.certification.tasks.profile.ChangeProfilePhoto;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -26,6 +27,11 @@ public class ConfigureProfile {
     @Then("^the system should show the message (.*)$")
     public void the_system_should_show_the_message(String message) {
         theActorInTheSpotlight().should(seeThat(Message.is(ProfilePage.MESSAGE_CHANGE_NAME), equalTo(message)));
+    }
+
+    @When("^user changes profile photo Super usuario$")
+    public void user_changes_profile_photo_Super_usuario() {
+        theActorInTheSpotlight().attemptsTo(ChangeProfilePhoto.onTheField());
     }
 
 }
