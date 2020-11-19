@@ -87,7 +87,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Gradle.Maintenance">
     <configuration name="Feature: customer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
@@ -239,26 +239,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1603310443724" />
-    <state width="1323" height="174" key="GridCell.Tab.0.bottom" timestamp="1605137345853">
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom" timestamp="1605808174728">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1605137345853" />
-    <state width="1323" height="174" key="GridCell.Tab.0.center" timestamp="1605137345853">
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1605808174727" />
+    <state width="1323" height="174" key="GridCell.Tab.0.center" timestamp="1605808174727">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1605137345853" />
-    <state width="1323" height="174" key="GridCell.Tab.0.left" timestamp="1605137345853">
+    <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1605808174727" />
+    <state width="1323" height="174" key="GridCell.Tab.0.left" timestamp="1605808174727">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1605137345853" />
-    <state width="1323" height="174" key="GridCell.Tab.0.right" timestamp="1605137345853">
+    <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1605808174727" />
+    <state width="1323" height="174" key="GridCell.Tab.0.right" timestamp="1605808174727">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="236" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1603407252125" />
-    <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1605137345853" />
+    <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1605808174727" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1604014438674">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -275,10 +275,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1604014438674" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1603927374558">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1605807956724">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1603927374558" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1605807956724" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1603921712808">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

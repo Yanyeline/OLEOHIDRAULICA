@@ -1,4 +1,5 @@
 Feature: Login
+
 @uno
   Scenario Outline: User can successfully login
 

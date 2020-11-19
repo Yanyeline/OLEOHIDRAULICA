@@ -14,6 +14,15 @@ Feature: Manage maintenance
       | cotizacion   | cliente    |
       |457           |TELEMEDELLIN|
 
+    Scenario Outline: User can update an maintenance
+      When usuer searches for the maintenance's customer hv6-809
+      And user enters imformation data
+      |  |
+      |<>|
+      And user update maintenance
+      When user sees maintenance information
+      Examples:
+
 
 
 

@@ -16,7 +16,7 @@ Feature: Manage user
     And user saves registration data
     Then user registers employee <name>
     Examples:
-      | name         | email              | id         | role                       |
+      | name         | email              | id         | role                  |
       | NewUser | newuser@prueba.com | 3025590081 | administrador de servicios |
 
 
