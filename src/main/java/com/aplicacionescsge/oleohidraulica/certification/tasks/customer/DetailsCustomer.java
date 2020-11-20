@@ -21,7 +21,6 @@ public class DetailsCustomer implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(CustomerPage.BTN_SORTING.of(Search)),
                 Click.on(CustomerPage.BTN_VIEW.of(Search))
         );
     }

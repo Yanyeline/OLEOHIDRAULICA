@@ -25,9 +25,9 @@ public class ResultSearchUpdateMaintenance implements Question<Boolean> {
         @Override
         public Boolean answeredBy(Actor actor) {
 
-            cotizacion = MaintenancePage.TXT_N_COTIZACION_UPDATE.resolveFor(actor).getTextValue();
+            cotizacion = MaintenancePage.TXT_N_COT.resolveFor(actor).getTextValue();
             //f_cotizacion = MaintenancePage.TXT_F_COTIZACION_UPDATE.resolveFor(actor).getTextValue();
-            cliente = MaintenancePage.TXT_CLIENTE_UPDATE.resolveFor(actor).getSelectedVisibleTextValue();
+            cliente = MaintenancePage.DDL_CONTACTO_CLIENTE.resolveFor(actor).getSelectedVisibleTextValue();
 
           for (Map<String, String> dataMaintenance : Dates) {
             if ((cotizacion.equals(dataMaintenance.get("cotizacion")))

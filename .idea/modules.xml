@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/OleoHidraulica.iml" filepath="$PROJECT_DIR$/.idea/modules/OleoHidraulica.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/OleoHidraulica.main.iml" filepath="$PROJECT_DIR$/.idea/modules/OleoHidraulica.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/OleoHidraulica.test.iml" filepath="$PROJECT_DIR$/.idea/modules/OleoHidraulica.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.aplicaciones-csge.oleohidraulica.OleoHidraulica.iml" filepath="$PROJECT_DIR$/.idea/modules/com.aplicaciones-csge.oleohidraulica.OleoHidraulica.iml" />
     </modules>
   </component>
 </project>

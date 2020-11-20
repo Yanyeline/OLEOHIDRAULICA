@@ -105,8 +105,7 @@ public class MaintenancePage {
     public static  Target BTN_NEW_UPD = Target.the("").located(By.id("modalToggle_update"));
     public static  Target TXT_N_COT_UPD = Target.the("").located(By.id("n_cotizacion_update"));
     public static  Target TXT_FECHA_COT_UPD = Target.the("").located(By.id("fecha_cotizacion_update"));
-    public static  Target BTN_COT_INICIAL_UPD = Target.the("").located(By.id("Cinicial_update"));
-    public static  Target BTN_COT_FINAL_UPD = Target.the("").located(By.id("Cfinal_update"));
+    public static  Target DDL_TIPO_COT_UPD = Target.the("").locatedBy("//input[@name='C{0}_update']");
     public static  Target DDL_CONTACTO_CLIENTE_UPD = Target.the("").located(By.id("ContactoCliente_update"));
     public static  Target DDL_CONTACTO_CLIENTE_OPTION_UPD = Target.the("").locatedBy("//div[@class='form-group']//select[@name='ContactoCliente_update']//option[contains(text(),'{0}')]");
     public static  Target BTN_CONTINUE_UPD = Target.the("").located(By.id("infoContinue_update"));

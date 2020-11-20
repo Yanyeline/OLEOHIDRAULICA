@@ -16,7 +16,13 @@ Feature: Manage maintenance
 
     Scenario Outline: User can update an maintenance
       When usuer searches for the maintenance's customer hv6-809
-      And user
+      And user enters imformation data
+      |  |
+      |<>|
+      And user update maintenance
+      When user sees maintenance information
+      Examples:
+
 
 
 

@@ -27,7 +27,6 @@ public class EditCustomer implements Task {
                 Click.on(MenuOption.OPTION_CUSTOMER),
                 Enter.theValue(Search).into(CustomerPage.SEARCH_CUSTOMER),
                 Wait.Element(UserPage.BTN_SORTING.of(Search)),
-                Click.on(CustomerPage.BTN_SORTING.of(Search)),
                 Click.on(CustomerPage.BTN_EDIT.of(Search))
         );
     }

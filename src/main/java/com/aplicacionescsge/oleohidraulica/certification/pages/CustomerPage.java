@@ -21,7 +21,7 @@ public class CustomerPage {
     public static Target BTN_CLOSE = Target.the("").located(By.xpath("//a[@class='btn-close ']//p[contains(text(),'Cerrar')][1]"));
     public static Target BTN_SAVE = Target.the("").located(By.xpath("//p[contains(text(),'Guardar')]"));
     //OPTIONS FOR CUSTOMER
-    public static Target BTN_SORTING = Target.the("").locatedBy("//tbody//td[contains(text(),'{0}')]//parent::tr//td[@class='sorting_1']");
+    //public static Target BTN_SORTING = Target.the("").locatedBy("//tbody//td[contains(text(),'{0}')]//parent::tr//td[@class='sorting_1']");
     public static Target BTN_EDIT = Target.the("").locatedBy("//tbody//parent::tr[td[contains(text(),'{0}')]]//parent::tbody//child::tr//td[@class='child']//button[@class='btn-edit']");
     public static Target BTN_VIEW = Target.the("").locatedBy("//tbody//parent::tr[td[contains(text(),'{0}')]]//parent::tbody//child::tr//td[@class='child']//button[@class='btn-view']");
     //FORM EDIT-VIEW FIELDS

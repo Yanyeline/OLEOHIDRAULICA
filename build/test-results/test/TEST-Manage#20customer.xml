@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Manage customer" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-11-19T21:02:40" hostname="DESKTOP-E17N4K9" time="188.17">
+  <properties/>
+  <testcase name="User can consult customer details" classname="Manage customer" time="188.17">
+    <failure message="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1149)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$B9XM8pqv.performAs$accessor$SJmFTd6Y(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$B9XM8pqv.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.aplicacionescsge.oleohidraulica.certification.tasks.customer.DetailsCustomer.performAs(DetailsCustomer.java:23)
+	at com.aplicacionescsge.oleohidraulica.certification.tasks.customer.DetailsCustomer$ByteBuddy$aBPqU2Bu.performAs$accessor$6zZQ9wqE(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.aplicacionescsge.oleohidraulica.certification.tasks.customer.DetailsCustomer$ByteBuddy$aBPqU2Bu.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.aplicacionescsge.oleohidraulica.stepdefinitions.Customer.userSelectAnCustomer(Customer.java:49)
+	at ✽.user select an customer CONCRETOS ARGOS S.A(src/test/resources/features/customer.feature:20)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: //tbody//parent::tr[td[contains(text(),'CONCRETOS ARGOS S.A')]]//parent::tbody//child::tr//td[@class='child']//button[@class='btn-view'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$B9XM8pqv.performAs$accessor$SJmFTd6Y(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$B9XM8pqv.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.aplicacionescsge.oleohidraulica.certification.tasks.customer.DetailsCustomer.performAs(DetailsCustomer.java:23)
+	at com.aplicacionescsge.oleohidraulica.certification.tasks.customer.DetailsCustomer$ByteBuddy$aBPqU2Bu.performAs$accessor$6zZQ9wqE(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.aplicacionescsge.oleohidraulica.certification.tasks.customer.DetailsCustomer$ByteBuddy$aBPqU2Bu.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.aplicacionescsge.oleohidraulica.stepdefinitions.Customer.userSelectAnCustomer(Customer.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tbody//parent::tr[td[contains(text(),'CONCRETOS ARGOS S.A')]]//parent::tbody//child::tr//td[@class='child']//button[@class='btn-view']&quot;}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E17N4K9', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62535}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 177c27e573199e3275466d796914f1a2
+*** Element info: {Using=xpath, value=//tbody//parent::tr[td[contains(text(),'CONCRETOS ARGOS S.A')]]//parent::tbody//child::tr//td[@class='child']//button[@class='btn-view']}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 98 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@606eb0f2
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given user is loged on page with email "administrador@gmail.com" and Password "password"
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 86.0.4240.22 (since Google Chrome 86 is installed in your machine)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\hp\.m2\repository\webdriver\chromedriver\win32\86.0.4240.22\chromedriver.exe
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 24456
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1605819852.024][WARNING]: Timed out connecting to Chrome, retrying...
+nov 19, 2020 4:04:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6ee72dac
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user opens the web site
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@36e584ae
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user opens the Login page
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@43a64c94
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user login site
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@13c1ef14
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user enters 'administrador@gmail.com' into 
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into ]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3224f33d
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user enters 'password' into 
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into ]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6a471cc9
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user clicks on 
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into , user clicks on ]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into , user clicks on ]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into , user clicks on ]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@18409f41
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When user search an customer CONCRETOS ARGOS S.A
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@61f9e731
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user consult customer information
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4657c4ba
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user clicks on 
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into , user clicks on ]], When user search an customer CONCRETOS ARGOS S.A [user consult customer information [user clicks on ]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@27cd7b53
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user enters 'CONCRETOS ARGOS S.A' into 
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into , user clicks on ]], When user search an customer CONCRETOS ARGOS S.A [user consult customer information [user clicks on , user enters 'CONCRETOS ARGOS S.A' into ]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into , user clicks on ]], When user search an customer CONCRETOS ARGOS S.A [user consult customer information [user clicks on , user enters 'CONCRETOS ARGOS S.A' into ]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into , user clicks on ]], When user search an customer CONCRETOS ARGOS S.A [user consult customer information [user clicks on , user enters 'CONCRETOS ARGOS S.A' into ]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@29d4eef6
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And user select an customer CONCRETOS ARGOS S.A
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@32792147
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user details customer
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@22f11f94
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP user clicks on 
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled?[0m
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@e160f08
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then user sees customer information
+| name | email | nit | address | tel | contact | emailcontact | cel |
+| CONCRETOS ARGOS S.A | mantenimientozno@argos.com.co | 860350697-4 | CALLE 72 #  64C - 55 Medellín | 3456778 | ING. ALEJANDRO TABORDA | mgiraldoe@argos.com.co | 3006786789 |
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[33mIGNORING STEP?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E17N4K9', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: unknown?[0m
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into , user clicks on ]], When user search an customer CONCRETOS ARGOS S.A [user consult customer information [user clicks on , user enters 'CONCRETOS ARGOS S.A' into ]], And user select an customer CONCRETOS ARGOS S.A [user details customer [user clicks on ]]], Then user sees customer information
+| name | email | nit | address | tel | contact | emailcontact | cel |
+| CONCRETOS ARGOS S.A | mantenimientozno@argos.com.co | 860350697-4 | CALLE 72 #  64C - 55 Medellín | 3456778 | ING. ALEJANDRO TABORDA | mgiraldoe@argos.com.co | 3006786789 |
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into , user clicks on ]], When user search an customer CONCRETOS ARGOS S.A [user consult customer information [user clicks on , user enters 'CONCRETOS ARGOS S.A' into ]], And user select an customer CONCRETOS ARGOS S.A [user details customer [user clicks on ]]], Then user sees customer information
+| name | email | nit | address | tel | contact | emailcontact | cel |
+| CONCRETOS ARGOS S.A | mantenimientozno@argos.com.co | 860350697-4 | CALLE 72 #  64C - 55 Medellín | 3456778 | ING. ALEJANDRO TABORDA | mgiraldoe@argos.com.co | 3006786789 |]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [User can consult customer details:Example: {name=CONCRETOS ARGOS S.A, email=mantenimientozno@argos.com.co, nit=860350697-4, address=CALLE 72 #  64C - 55 Medellín, tel=3456778, contact=ING. ALEJANDRO TABORDA, emailcontact=mgiraldoe@argos.com.co, cel=3006786789} [Given user is loged on page with email "administrador@gmail.com" and Password "password" [user opens the web site [user opens the Login page], user login site [user enters 'administrador@gmail.com' into , user enters 'password' into , user clicks on ]], When user search an customer CONCRETOS ARGOS S.A [user consult customer information [user clicks on , user enters 'CONCRETOS ARGOS S.A' into ]], And user select an customer CONCRETOS ARGOS S.A [user details customer [user clicks on ]]], Then user sees customer information
+| name | email | nit | address | tel | contact | emailcontact | cel |
+| CONCRETOS ARGOS S.A | mantenimientozno@argos.com.co | 860350697-4 | CALLE 72 #  64C - 55 Medellín | 3456778 | ING. ALEJANDRO TABORDA | mgiraldoe@argos.com.co | 3006786789 |]
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: User can consult customer details
+--------------------------------------------------------------------------?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP user clicks on?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabled
+]]></system-err>
+</testsuite>

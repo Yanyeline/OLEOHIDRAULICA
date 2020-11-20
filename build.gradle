@@ -26,6 +26,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'junit:junit:4.12'
+    implementation 'junit:junit:4.12'
     compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.0.88'
     compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.0.88'
     compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.48'

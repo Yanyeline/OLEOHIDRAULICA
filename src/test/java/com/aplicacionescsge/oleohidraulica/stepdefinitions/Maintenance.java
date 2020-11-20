@@ -3,6 +3,7 @@ package com.aplicacionescsge.oleohidraulica.stepdefinitions;
 import com.aplicacionescsge.oleohidraulica.certification.questions.ResultSearchUpdateMaintenance;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.maintenance.ConsultMaintenance;
 import com.aplicacionescsge.oleohidraulica.certification.tasks.maintenance.DetailsMaintenance;
+import com.aplicacionescsge.oleohidraulica.certification.tasks.maintenance.UpdateMaintenance;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -29,4 +30,9 @@ public class Maintenance {
         theActorInTheSpotlight().should(seeThat(ResultSearchUpdateMaintenance.isVisible(data)));
     }
 
+    @When("^user enters imformation data$")
+    public void userEntersImformationData(List<Map<String, String>> data) {
+        theActorInTheSpotlight().attemptsTo(UpdateMaintenance.fillFields(data));
+
+    }
 }
